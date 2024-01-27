@@ -8,6 +8,7 @@ import { environment } from '../../enviroments/enviroment';
 })
 export class AdministracionService {
 
+  // private url: string = environment.url;
   private url: string = environment.url;
 
   constructor(private http: HttpClient) { }
