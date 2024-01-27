@@ -1,0 +1,292 @@
+@media (max-width: 425px){
+    #contenedor {
+        background: rgb(164, 164, 164);
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .contenedorLogo {
+        margin-top: 5px;
+        margin-left: 30%;
+        margin-bottom: 30px;
+        border-radius: 50%;
+        width: 40%;
+        height: 100%;
+        background: white;
+    }
+    
+    #imgLogo {
+        padding-top: 10%;
+        margin-left: 15%;
+        width: 70%;
+        height: 70%;
+        border-radius: 20%;
+    }
+    
+    #recuerdame{
+        margin-top: 5px;
+        position: absolute;
+    }
+    
+    #textRecuerdame{
+        margin-left: 15px; 
+        margin-top: 10px; 
+        position: relative;
+    }
+
+    .contRegistro{
+        display: flex;
+    }
+    
+    #btnIngresar {
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+}
+
+@media(min-width: 426px) and (max-width: 768px){
+    #contenedor {
+        margin-top: 2%;
+        background: rgb(164, 164, 164);
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .contenedorLogo {
+        margin-top: 5px;
+        margin-left: 30%;
+        margin-bottom: 30px;
+        border-radius: 50%;
+        width: 40%;
+        height: 100%;
+        background: white;
+    }
+    
+    #imgLogo {
+        padding-top: 10%;
+        margin-left: 15%;
+        width: 70%;
+        height: 70%;
+        border-radius: 20%;
+    }
+
+    #inputDatos{
+        font-size: 15px;
+    }
+
+    .contRecuerdame{
+        justify-content: space-between;
+        display: flex;
+        margin-top: 10px;
+    }
+    
+    #recuerdame{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+    }
+
+    #textLabel{
+        font-size: 15px;
+    }
+    
+    #textRecuerdame{
+        margin-left: 25px; 
+        font-size: 15px;
+    }
+    
+    #olvido{
+        font-size: 15px;
+    }
+    
+    #btnIngresar {
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 30px;
+        font-size: 15px;
+    }
+}
+
+@media(min-width: 769px) and (max-width: 1024px){
+    #contenedor {
+        margin-top: 2%;
+        background: rgb(164, 164, 164);
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .contenedorLogo {
+        margin-top: 5px;
+        margin-left: 30%;
+        margin-bottom: 30px;
+        border-radius: 50%;
+        width: 40%;
+        height: 100%;
+        background: white;
+    }
+    
+    #imgLogo {
+        padding-top: 10%;
+        margin-left: 15%;
+        width: 70%;
+        height: 70%;
+        border-radius: 20%;
+    }
+
+    #inputDatos{
+        font-size: 20px;
+    }
+
+    .contRecuerdame{
+        justify-content: space-between;
+        display: flex;
+        margin-top: 15px;
+    }
+    
+    #recuerdame{
+        margin-top: 5px;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+    }
+
+    #textLabel{
+        font-size: 20px;
+    }
+    
+    #textRecuerdame{
+        margin-left: 25px; 
+        font-size: 20px;
+    }
+    
+    #olvido{
+        font-size: 20px;
+    }
+    
+    #btnIngresar {
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+}
+
+@media(min-width: 1025px) and (max-width: 1440px){
+    #contenedor {
+        margin-top: 2%;
+        background: rgb(164, 164, 164);
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .contenedorLogo {
+        margin-top: 5px;
+        margin-left: 30%;
+        margin-bottom: 30px;
+        border-radius: 50%;
+        width: 40%;
+        height: 100%;
+        background: white;
+    }
+    
+    #imgLogo {
+        padding-top: 10%;
+        margin-left: 15%;
+        width: 70%;
+        height: 70%;
+        border-radius: 20%;
+    }
+
+    .contRecuerdame{
+        justify-content: space-between;
+        display: flex;
+        margin-top: 20px;
+    }
+    
+    #recuerdame{
+        margin-top: 5px;
+        position: absolute;
+    }
+    
+    #textRecuerdame{
+        margin-left: 15px; 
+    }
+    
+    #registrarse{
+        right: 25%; 
+        position: absolute;
+    }
+    
+    #btnIngresar {
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 30px;
+        font-size: 25px;
+    }
+}
+
+@media(min-width: 1441px) and (max-width: 2560px){
+    #contenedor {
+        margin-top: 2%;
+        background: rgb(164, 164, 164);
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .contenedorLogo {
+        margin-top: 5px;
+        margin-left: 30%;
+        margin-bottom: 30px;
+        border-radius: 50%;
+        width: 40%;
+        height: 100%;
+        background: white;
+    }
+    
+    #imgLogo {
+        padding-top: 10%;
+        margin-left: 15%;
+        width: 70%;
+        height: 70%;
+        border-radius: 20%;
+    }
+
+    #inputDatos{
+        font-size: 30px;
+    }
+
+    .contRecuerdame{
+        justify-content: space-between;
+        display: flex;
+        margin-top: 20px;
+    }
+    
+    #recuerdame{
+        margin-top: 20px;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+    }
+
+    #textLabel{
+        font-size: 30px;
+    }
+    
+    #textRecuerdame{
+        margin-left: 25px; 
+        margin-top: 10px; 
+        font-size: 30px;
+    }
+    
+    #olvido{
+        font-size: 30px;
+    }
+    
+    #btnIngresar {
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+}

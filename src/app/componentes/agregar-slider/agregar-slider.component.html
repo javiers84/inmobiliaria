@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="col-12">
+
+        <!-- ///////// TITULO /////////// -->
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center tit">AGREGAR IMAGEN AL SLIDER</h1>
+            </div>
+        </div>
+
+        <!-- ////////// AGREGAR SLIDER /////////// -->
+        <div class="row divImagen">
+            <div class="col-6">
+                <div action="">
+                    <div class="form-group">
+                        <input class="inputImagen" type="file" id="avatar" (change)="onFileChange($event)" #fileInput>
+                        <button type="button" class="btn btn-sm btn-primary botonImg" (click)="clearFile()">Borrar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div action="">
+                    <div class="form-group" id="muestraImg">
+                        <div class="row">
+                            <div class="col-2" id="divImgSeleccionada">
+                                <img [(ngModel)]="imagen" name="imagen" ngDefaultControl src="data:image/jpg;base64,{{ imagenSeleccionada }}" id="imagen">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <!-- /////// BOTON GUARDAR -->
+        <div class="row">
+            <div class="col-12">
+                <button class="btn btn-danger btnGuardar" (click)="guardarSlider()">GUARDAR</button>
+            </div>
+        </div>
+    </div>

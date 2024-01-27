@@ -1,0 +1,183 @@
+@media (max-width: 425px){}
+
+@media (min-width: 426px) and (max-width: 768px){}
+
+@media(min-width: 769px) and (max-width: 1024px){}
+
+@media(min-width: 1025px) and (max-width: 1440px){
+    #contenedorFormulario{
+        padding: 10px;
+    }
+    
+    #titulo {
+        text-align: center;
+    }
+    
+    .codigo {
+        display: flex;
+    }
+    
+    #checkCountry{
+        margin-top: 5px;
+    }
+    
+    .precio {
+        display: flex;
+    }
+    
+    .titServicios {
+        margin-top: 20px;
+    }
+    
+    #zona {
+        margin-left: 5px;
+    }
+    
+    #labelCodigo {
+        padding-top: 5px;
+    }
+    
+    #inputCodigo {
+        margin-left: 10px;
+    }
+    
+    #labelPrecio {
+        padding-top: 5px;
+    }
+    
+    #inputPrecio {
+        margin-left: 10px;
+    }
+    
+    #ciudad{
+        width: 100%;
+        margin-top: 5px;
+    }
+    
+    #tipoUnidad {
+        width: 100%;
+    }
+    
+    .selectaltura {
+        height: 35px;
+    }
+    
+    #contenedorImg{
+        margin-top: 15px;
+    }
+    
+    #divAvatar{
+        margin-top: 10px;
+    }
+    
+    .imgSeleccionadaAvatar{
+        width: 150px; 
+        height: 150px;
+    }
+    
+    .contenedorInputImg{
+        margin-top: 10px;
+    }
+    
+    #imgAvatar {
+        margin-top: 25px;
+    }
+    
+    #propietario {
+        width: 100%;
+    }
+    
+    #btnAgregarDatos{
+        width: 80%; 
+        margin-top: 20px;
+    }
+}
+
+@media(min-width: 1441px) and (max-width: 2560px){
+    #contenedorFormulario{
+        padding: 10px;
+    }
+    
+    #titulo {
+        text-align: center;
+    }
+    
+    .codigo {
+        display: flex;
+    }
+    
+    #checkCountry{
+        margin-top: 5px;
+    }
+    
+    .precio {
+        display: flex;
+    }
+    
+    .titServicios {
+        margin-top: 20px;
+    }
+    
+    #zona {
+        margin-left: 5px;
+    }
+    
+    #labelCodigo {
+        padding-top: 5px;
+    }
+    
+    #inputCodigo {
+        margin-left: 10px;
+    }
+    
+    #labelPrecio {
+        padding-top: 5px;
+    }
+    
+    #inputPrecio {
+        margin-left: 10px;
+    }
+    
+    #ciudad{
+        width: 100%;
+        margin-top: 5px;
+    }
+    
+    #tipoUnidad {
+        width: 100%;
+    }
+    
+    .selectaltura {
+        height: 35px;
+    }
+    
+    #contenedorImg{
+        margin-top: 15px;
+    }
+    
+    #divAvatar{
+        margin-top: 10px;
+    }
+    
+    .imgSeleccionadaAvatar{
+        width: 150px; 
+        height: 150px;
+    }
+    
+    .contenedorInputImg{
+        margin-top: 10px;
+    }
+    
+    #imgAvatar {
+        margin-top: 25px;
+    }
+    
+    #propietario {
+        width: 100%;
+    }
+    
+    #btnAgregarDatos{
+        width: 80%; 
+        margin-top: 20px;
+    }
+}

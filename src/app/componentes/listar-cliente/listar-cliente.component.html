@@ -1,0 +1,55 @@
+<div class="contenedor">
+    <div class="row titulo">
+      <div class="col-12 justify-content-center">
+        <h2 class="textTitulo">LISTA DE CLIENTES</h2>
+      </div>
+    </div>
+  
+    <div class="row lista">
+      <div class="col-12">
+        <table class="tabla">
+          <thead>
+              <tr>
+                  <td class="itemTitulo">Nombre</td>
+                  <td class="itemTitulo">Domicilio</td>
+                  <td class="itemTitulo">Telefono</td>
+                  <td class="itemTitulo">Propiedad</td>
+                  <!-- <td class="itemTitulo">Inquilino</td> -->
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+          </thead>
+  
+          <tbody id="cuerpoTabla">
+              <tr *ngFor="let cliente of clientes">
+                  <td class="item">{{ cliente.nombre }}</td>
+                  <td class="item">{{ cliente.domicilio }}</td>
+                  <td class="item">{{ cliente.celular }}</td>
+                  <td class="item">{{ cliente.idPropiedad.domicilio }}</td> <!-- ARMAR MUESTRA PROPIEDADES -->
+                  <!-- <td class="item">{{ cliente.inquilino }}</td> ARMAR MUESTRA INQUILINOS -->
+                  <td class="itemBtn">
+                      <a class="btn" [routerLink]="['/dashboard/modificar-cliente', cliente._id]" (click)="modificarCliente(cliente._id)">
+                          <i class="fas fa-file-edit btnModificar"></i>
+                          <!-- <p>modificar</p> -->
+                      </a>
+                  </td>
+                  <td class="itemBtn">
+                      <a class="btn" (click)="eliminarCliente(cliente._id)">
+                          <i class="fas fa-trash-alt btnEliminar"></i>
+                          <!-- <p>eliminar</p> -->
+                      </a>
+                  </td>
+                  <td class="itemBtn">
+                      <a class="btn" [routerLink]="['/dashboard/verMas-cliente', cliente._id]" (click)="verMas(cliente._id)">
+                          <!-- <i class="fas fa-share-square btnExportar"></i> -->
+                          <!-- <p>ver mas...</p> -->
+                          ver mas...
+                      </a>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+      </div>
+    </div>
+  </div>

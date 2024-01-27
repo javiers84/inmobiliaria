@@ -1,0 +1,16 @@
+.itemTitulo{
+    padding-right: 15px;
+    padding-left: 15px;
+    justify-content: center;
+    font-weight: bold;
+}
+
+#cuerpoTabla{
+    margin-top: 25px;
+}
+
+.item{
+    padding-right: 15px;
+    padding-left: 15px;
+    justify-content: center;
+}

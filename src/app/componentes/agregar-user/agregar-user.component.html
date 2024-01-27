@@ -1,0 +1,68 @@
+<div class="contenedor">
+    <div class="row ">
+      <div class="col-12 titulo">
+        <h2 class="textTitulo justify-content-center">AGREGAR USUARIO</h2>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-9 formulario">
+        <div class="form-group">
+          <label for="ejempliInput1">Usuario</label>
+          <input type="text" [(ngModel)]="user" name="user" class="form-control" id="ejempliInput1" placeholder="Ingresa el Usuario">
+        </div>
+        <div class="form-group">
+          <label for="ejempliInput1">Mail</label>
+          <input type="text" [(ngModel)]="mail" name="mail" class="form-control" id="ejempliInput1" placeholder="Ingresa el Email">
+        </div>
+        <div class="form-group">
+          <label for="ejempliInput1">Contraseña</label>
+          <input type="password" [(ngModel)]="password" name="password" class="form-control" id="ejempliInput1" placeholder="Ingresa la Contraseña">
+        </div>
+        <div class="form-group">
+          <label for="ejempliInput1">Nombre</label>
+          <input type="text" [(ngModel)]="nombre" name="nombre" class="form-control" id="ejempliInput1" placeholder="Ingresa el Nombre">
+        </div>
+        <div class="form-group">
+          <label for="ejempliInput1">Telefono</label>
+          <input type="text" [(ngModel)]="telefono" name="telefono" class="form-control" id="ejempliInput1" placeholder="Ingresa el Telefono">
+        </div>
+        <div class="row divImagen">
+          <div class="col-6">
+              <div action="">
+                  <div class="form-group">
+                      <input class="inputImagen" type="file" id="avatar" (change)="onFileChange($event)" #fileInput>
+                      <button type="button" class="btn btn-sm btn-primary botonImg" (click)="clearFile()">Borrar</button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-6">
+              <div action="">
+                  <div class="form-group" id="muestraImg">
+                      <div class="row">
+                          <div class="col-4" id="divImgSeleccionada">
+                              <img [(ngModel)]="imagen" name="imagen" ngDefaultControl src="data:image/jpg;base64,{{ imagenSeleccionada }}" id="imagen">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+        <div class="form-group">
+          <label for="ejempliInput1">Role</label>
+          <br>
+          <select class="selectaltura" [(ngModel)]="idRole" name="idRole" id="role">
+              <option>select...</option>
+              <option *ngFor="let role of roles" [value]="role._id">{{ role.nombre }}</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row justify-content-center">
+      <!-- <div class="col-2"></div> -->
+      <div class="col-9">
+          <button type="button" id="btnAgregar" class="btn btn-sm btn-primary" (click)="agregarUsuario()">Agregar</button>
+      </div>
+  </div>
+  </div>

@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="col-12">
+        <h1 class="titulo">SLIDER</h1>
+
+        <!-- ////// IMAGEN SELECCIONADA -->
+        <div class="col-12">
+            <div class="form-group muestraImg">
+                <div class="row">
+                    <img [(ngModel)]="imagen" src="http://localhost:3000/{{imagenSeleccionada}}" id="imagen">
+                </div>
+            </div>
+        </div>
+
+        <!-- ////// OVERFLOW IMAGENES -->
+        <div class="testimonial-group">
+
+            <div class="row">
+                <div class="col-4" *ngFor="let item of sliders">
+                    <input type="image" src="http://localhost:3000/{{item.imagen}}" class="imgSlider" id="imgMinSlider" (click)="mostrarImg(item._id)">
+                    <br>
+                    <button class="btn btn-danger" (click)="eliminarImg(item._id)">ELIMINAR</button>
+                    <button class="btn btn-primary" [routerLink]="['/dashboard/modificar-users', item._id]" routerLinkActive="router-link-active">MODIFICAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

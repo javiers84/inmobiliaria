@@ -1,0 +1,9 @@
+.selectaltura {
+    height: 35px;
+    width: 100%;
+}
+
+#btnAgregar{
+    width: 80%; 
+    margin-top: 30px;
+}

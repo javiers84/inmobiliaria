@@ -1,0 +1,104 @@
+
+<div class="row propiedades">
+
+    <!-- //////// FILTROS //////// -->
+    <ul class="nav justify-content-center">
+        <li class="nav-item" id="lista">
+            <div class="row items">
+                <div class="form-group">
+                    <label for="tipo" id="label">Condicion: </label>
+                    <select name="condicion" class="filtros" id="condicionOperacion" [ngModelOptions]="{standalone: true}" [(ngModel)]="condicionOperacion" 
+                    (ngModelChange)="filtrarPorTipoOperacion()">
+                        <option disabled>Select...</option>
+                        <!-- <option name="condicion" disabled>Select...</option> -->
+                        <option value="venta" id="condicion">Venta</option>
+                        <option value="alquiler" id="condicion">Alquiler</option>
+                        <!-- <option *ngFor="let condicion of propiedades" [value]="condicion.tipoOperacion" name="condicion">{{condicion.tipoOperacion}}</option> -->
+                    </select>
+                </div>
+            </div>
+        </li>
+        <li class="nav-item" id="lista">
+            <div class="row items">
+                <div class="form-group">
+                    <label for="medidas" id="label">Tipo: </label>
+                    <select name="tipo" class="filtros" id="tipo" [(ngModel)]="tipoPropiedad" (change)="filtrarPorTipoPropiedad()">
+                        <option disabled>Select...</option>
+                        <option data-name="Departamento" value="departamento" name="tipoUnidad" id="tipoUnidad">Departamento</option>
+                        <option data-name="Casa" value="casa" name="tipoUnidad" id="tipoUnidad">Casa</option>
+                        <option data-name="Duplex" value="duplex" name="tipoUnidad" id="tipoUnidad">Duplex</option>
+                        <option data-name="Local" value="local" name="tipoUnidad" id="tipoUnidad">Local Comercial</option>
+                        <option data-name="Terreno" value="terreno" name="tipoUnidad" id="tipoUnidad">Terreno</option>
+                        <option data-name="Campo" value="campo" name="tipoUnidad" id="tipoUnidad">Campo</option>
+                        <option data-name="Galpon" value="galpon" name="tipoUnidad" id="tipoUnidad">Galpon</option>
+                        <option data-name="Fondo" value="fondoComercio" name="tipoUnidad" id="tipoUnidad">Fondo de Comercio</option>
+                        <option data-name="Predio" value="predio" name="tipoUnidad" id="tipoUnidad">Predio</option>
+                        <!-- <option *ngFor="let tipo of propiedades" [value]="tipo.tipoUnidad">{{ tipo.tipoUnidad }}</option> -->
+                    </select>
+                </div>
+            </div>
+        </li>
+        <li class="nav-item" id="lista">
+            <div class="row items">
+                <div class="form-group">
+                    <label for="dormitorios" id="label">Dormitorios: </label>
+                    <select name="dormitorios" class="filtros" id="dormitorios" [(ngModel)]="cantDormitorios" (change)="filtrarPorcantDormitorios()">
+                        <option disabled>Select...</option>
+                        <option data-name="mono" value="mono" name="dormitorios id="dormitorios>Mono</option>
+                        <option data-name="1" value="1" name="dormitorios id="dormitorios>Uno</option>
+                        <option data-name="2" value="2" name="dormitorios id="dormitorios>Dos</option>
+                        <option data-name="3" value="3" name="dormitorios id="dormitorios>Tres</option>
+                        <option data-name="4+" value="4+" name="dormitorios id="dormitorios>Cuatro o +</option>
+                        <!-- <option *ngFor="let dormitorios of propiedades" [value]="dormitorios.dormitorios">{{ dormitorios.dormitorios }} -->
+                        <!-- </option> -->
+                    </select>
+                </div>
+            </div>
+        </li>
+        <li class="nav-item" id="lista">
+            <div class="row items">
+                <div class="form-group">
+                    <label for="zona" id="label">Zona: </label>
+                    <select name="zona" class="filtros" id="zona" [(ngModel)]="zonaPropiedad" (change)="filtrarPorZonaPropiedad()">
+                        <option disabled>Select...</option>
+                        <option data-name="Capital" value="capital" name="tipoUnidad" id="tipoUnidad">S. M. Tucuman</option>
+                        <option data-name="Yerba Buena" value="yerba Buena" name="tipoUnidad" id="tipoUnidad">Yerba Buena</option>
+                        <option data-name="Tafi Viejo" value="Tafi Viejo" name="tipoUnidad" id="tipoUnidad">Tafi Viejo</option>
+                        <option data-name="Tafi del Valle" value="Tafi del Valle" name="tipoUnidad" id="tipoUnidad">Tafi del Valle</option>
+                        <option data-name="Los Nogales" value="Los Nogales" name="tipoUnidad" id="tipoUnidad">Los Nogales</option>
+                        <option data-name="Las Talitas" value="Las Talitas" name="tipoUnidad" id="tipoUnidad">Las Talitas</option>
+                        <option data-name="San Andres" value="San Andres" name="tipoUnidad" id="tipoUnidad">San Andres</option>
+                        <option data-name="San Javier" value="San Javier" name="tipoUnidad" id="tipoUnidad">San Javier</option>
+                        <option data-name="Otro" value="Otro" name="tipoUnidad" id="tipoUnidad">Otro</option>
+                        <!-- <option *ngFor="let zona of propiedades" [value]="zona.ciudad">{{ zona.ciudad }} -->
+                        <!-- </option> -->
+                    </select>
+                </div>
+            </div>
+        </li>
+        <li class="nav-item">
+            <button class="btn btn-danger btnFiltro" (click)="limpiarFiltros()">Limpiar Filtros</button>
+        </li>
+    </ul>
+
+    <!-- /////// PROPIEDADES ///////  -->
+    <div class="row tarjetaProp container">
+        <div class="col-xxl-4 col-xl-3 col-lg-4 col-md-4 col-xs-12" id="divContainer" *ngFor="let propiedad of propiedades">
+            <div class="card">
+                <img src="http://localhost:3000/{{propiedad.imagen1}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p id="zonaCard">cod. {{propiedad.zona}} {{propiedad.codigo}}</p>
+                    <h5 class="card-title">{{propiedad.tipoUnidad}} | {{propiedad.tipoOperacion}}</h5>
+                    <p class="card-text">{{propiedad.tipoMoneda}}
+                        {{propiedad.precio}}</p>
+                    <p class="card-text d-xs-none line-clamp">{{propiedad.descripcion}}</p>
+                    <a [routerLink]="['/detalle-prop', propiedad._id]" routerLinkActive="router-link-active"
+                        class="btn btn-primary btnVerMas" (click)="verDetalles(propiedad._id)">Ver mas...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGINACION -->
+
+</div>

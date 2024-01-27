@@ -1,0 +1,140 @@
+<!-- mapa -->
+<br>
+<div class="datosContacto">
+    <div class="row divcontenedorframe">
+        <div class="col-3"></div>
+        <iframe id="frameMapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d926.8003969401367!2d-65.30038953702093!3d-26.814237289745577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942242d907e6128d%3A0xee80d9b418790fba!2sCariola%202003%2C%20Yerba%20Buena%2C%20Tucum%C3%A1n!5e1!3m2!1ses-419!2sar!4v1690502882192!5m2!1ses-419!2sar"
+            width="600" height="450" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- datos de contacto -->
+    <br>
+    <div class="row contenedorDatos">
+        <div class="col-xxl-2 col-xl-2 col-lg-1"></div>
+        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-xs-6 justify-content-center">
+            <div class="thumbnail pull-left">
+                <div>
+                    <i class="iconos fa-sharp fa-solid fa-location-dot fa-3x" ></i>
+                    <!-- <img src="../../../assets/logo-face1.jpg" width="50" alt=""> -->
+                </div>
+                <h3 id="tituloInfo">Ubicacion</h3>
+                <div class="caption">
+                    <p id="textoInfo">Cariola N° 2003 - 1° "2"</p>
+                    <p id="textoInfo">Yerba Buena</p>
+                    <p id="textoInfo">C.P.: 4107</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-3 col-md-3 col-xs-6 justify-content-center">
+            <div class="thumbnail pull-left">
+                <div>
+                    <i class="iconos fa-solid fa-phone fa-3x" ></i>
+                </div>
+                <h3 id="tituloInfo">Telefono</h3>
+                <div class="caption">
+                    <p id="textoInfo">3815482268</p>
+                    <p id="textoInfo">3815666633</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-3 col-md-3 col-xs-6 justify-content-center">
+            <div class="thumbnail pull-left">
+                <div>
+                    <i class="iconos fa-solid fa-envelope fa-3x" ></i>
+                    <!-- <img src="../../../assets/logo-face1.jpg" width="50" alt=""> -->
+                </div>
+                <h3 id="tituloInfo">E-Mail</h3>
+                <div class="caption">
+                    <p>
+                        <a id="textoInfo" href="mailto:jorgemarinoinmobiliaria&#64;gmail.com">jorgemarinoinmobiliaria&#64;gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- formulario contacto -->
+    <div class="container">
+        <br>
+        <div id="divContenedorFormulario">
+            <div class="row">
+                <div class="col-12 tituloFormulario">
+                    <p id="titForm">CONTACTO</p>
+                </div>
+                <br>
+                <div class="col-12 containerLeyenda">
+                    <p id="leyenda">Dejanos tu consulta. Gracias por contactarse con nosotros!</p>
+                </div>
+            </div>
+
+            <form id="main-contact-form" class="contact-form" name="contact-form" action="enviarmail.php" method="POST">
+                <div class="row">
+                    <div class="col-lg-1">
+                    </div>
+                    <div class="col-lg-5 col-xs-12">
+                        <div class="form-group">
+                            <label for="nombre" class="sr-only">Nombre: </label>
+                            <input type="text" id="nombre" name="nombre" class="inputContact form-control"
+                                required="required" placeholder="Nombre:">
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-xs-12">
+                        <div class="form-group">
+                            <label for="correo" class="sr-only">Correo:</label>
+                            <input type="text" id="correo" name="correo" class="inputContact form-control"
+                                required="required" placeholder="Correo:">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contDatos">
+
+                    <div class="col-lg-1">
+                    </div>
+                    <div class="form-group col-lg-5 col-md-6 col-xs-12">
+                        <label for="telefono" class="sr-only">Telefono:</label>
+                        <input type="text" id="telefono" name="telefono" class="inputContact form-control"
+                            required="required" placeholder="Telefono:">
+                    </div>
+                    <div class="form-group col-lg-5 col-md-6 col-xs-12">
+                        <label for="asunto" class="sr-only">Asunto:</label>
+                        <input type="text" id="asunto" name="asunto" class="inputContact form-control"
+                            required="required" placeholder="Asunto:">
+                    </div>
+                    <div class="col-lg-1">
+                    </div>
+
+                </div>
+
+                <div class="row containerMje">
+
+                    <div class="col-lg-1">
+                    </div>
+                    <div class="form-group col-lg-11 col-md-12 col-xs-12">
+                        <label for="mensaje" class="sr-only">Mensaje:</label>
+                        <textarea name="mensaje" id="mensaje" cols="30" maxlength="150" rows="10"
+                            class="inputContact form-control" placeholder="Mensaje..." required="required"></textarea>
+                    </div>
+                    <div class="col-lg-1">
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-5"></div>
+            <div class="col-xs-12" id="contenedorBtn">
+                <button type="submit" id="submit" name="submit" class="btn btn-primary"><span
+                        class="fas fa-paper-plane icono"></span> Enviar
+
+                </button>
+            </div>
+        </div>
+
+    </div>
+</div>

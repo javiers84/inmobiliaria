@@ -1,0 +1,34 @@
+<!-- SLIDER -->
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner" >
+        <div class="carousel-item" *ngFor="let item of sliders; first as primero" [class.active]="primero">
+            <img src="http://localhost:3000/{{item.imagen}}" class="d-block w-100 imgSlider" alt="...">
+        </div>
+    </div>
+</div>
+
+
+<div class="container contenedorPrinciparRecientes">
+    <br>
+    <!-- RECIENTES -->
+    <div class="row" id="contenedorRecientes">
+        <h3 id="textRecientes">RECIENTES</h3>
+    </div>
+    <br>
+    <div class="row tarjetaProp container">
+        <div class="col-xxl-4 col-lg-4 col-xs-12 col-md-4 contendorCards" *ngFor="let prop of propiedades">
+            <div class="card">
+                <img src="http://localhost:3000/{{prop.imagen1}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p id="codCard">cod. {{prop.zona}} {{prop.codigo}}</p>
+                    <h5 class="card-title">{{prop.tipoUnidad}} | {{prop.tipoOperacion}}</h5>
+                    <p class="card-text">{{prop.tipoMoneda}}
+                        {{prop.precio}}</p>
+                    <p class="card-text d-xs-none line-clamp">{{prop.descripcion}}</p>
+                    <a [routerLink]="['/detalle-prop', prop._id]" routerLinkActive="router-link-active"
+                        class="btn btn-primary btnVerMas" (click)="verDetalles(prop._id)">Ver mas...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

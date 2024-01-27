@@ -1,0 +1,764 @@
+@media(max-width: 425px){
+    .contenedorNota{
+        margin-top: 25px;
+    }
+    
+    .tipoUnidad{
+        font-weight: lighter;
+        margin-top: 10px;
+        font-size: 10px;
+    }
+    
+    #domicilio{
+        font-weight: bold;
+        font-size: 10px;
+    }
+    
+    #infoUbicacion{
+        font-weight: lighter;
+        font-size: 10px;
+    }
+    
+    .titulo{
+        margin-top: 20px;
+    }
+
+    #datosYdetalles{
+        font-size: 10px;
+    }
+    
+    .nota{
+        color: rgb(120, 120, 120);
+        margin-top: 15px;
+        font-size: 8px;
+        text-align: left;
+    }
+    
+    .tipoPrecio {
+        display: flex;
+        margin-bottom: 15px;
+        margin-top: 20px;
+        font-size: 10px;
+    }
+    
+    #tipo {
+        box-sizing: border-box;
+        display: block;
+        background: red;
+        border-radius: 4px;
+        padding: 7px 14px 7px 14px;
+        color: #fafafa;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    
+    #precio {
+        border-top: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        padding: 6px 10px 6px 8px;
+        color: gray;
+        background: #fafafa;
+        margin-left: -4px;
+        font-size: 8px;
+        text-align: center;
+    }
+
+    .contBtn{
+        margin-left: 25%;
+    }
+
+    .btnExportar{
+        color: white;
+        height: 15px;
+        width: 15px;
+    }
+
+    .contenedorImagenes{
+        padding: 0px;
+    }
+    
+    .imgPdf{
+        height: 110px;
+        width: 100px;
+        margin-top: 20px;
+        margin-right: 5px;
+    }
+
+    .agenteAcargo{
+        margin-bottom: 20px;
+    }
+
+    .titAgente{
+        background: red;
+        color: white;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .contenedorAgente{
+        display: flex;
+        /* flex-direction: column; */
+    }
+    
+    .agente{
+        flex-direction: column;
+        /* position: absolute; */
+        display: flex;
+        margin-top: 40px;
+        padding-right: 0px;
+    }
+    
+    #datosAgente{
+        margin-right: 5px;
+        font-size: 9px;
+        margin-bottom: 10px;
+    }
+    
+    .fa-solid{
+        margin-right: 5px;
+    }
+    
+    #imgAgente{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .datos{
+        margin-top: 5px;
+        width: 50%;
+    }
+
+    .nombreEmp{
+        font-weight: bold;
+    }
+    
+    #infoDatos{
+        margin-bottom: 0px;
+        font-size: 10px;
+    }
+    
+    #lineaVertical{
+        margin-top: 15px;
+        margin-left: 75px;
+        border-left:4px 
+        solid gray;
+        height:100px;
+        width: 0px;
+    }
+
+    .datosOfyLogo{
+        display: flex;
+    }
+    
+    .logo{
+        margin-top: -150px;
+        margin-left: 190px;
+        width: 45%;
+    }
+    
+    #imgLogo{
+        width: 170px;
+        height: 170px;
+    }
+}
+
+@media(min-width: 426px) and (max-width: 768px){
+    .contenedorNota{
+        margin-top: 25px;
+    }
+    
+    .tipoUnidad{
+        font-weight: lighter;
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    
+    #domicilio{
+        font-weight: bold;
+        font-size: 15px;
+    }
+    
+    #infoUbicacion{
+        font-weight: lighter;
+        font-size: 15px;
+    }
+    
+    .titulo{
+        margin-top: 20px;
+    }
+
+    #datosYdetalles{
+        font-size: 15px;
+    }
+    
+    .nota{
+        color: rgb(120, 120, 120);
+        margin-top: 15px;
+        font-size: 10px;
+        text-align: left;
+    }
+    
+    .tipoPrecio {
+        display: flex;
+        margin-bottom: 15px;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    
+    #tipo {
+        box-sizing: border-box;
+        display: block;
+        background: red;
+        border-radius: 4px;
+        padding: 7px 14px 7px 14px;
+        color: #fafafa;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    #precio {
+        border-top: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        padding: 6px 10px 6px 8px;
+        color: gray;
+        background: #fafafa;
+        margin-left: -4px;
+    }
+
+    .contBtn{
+        margin-left: 35%;
+    }
+
+    .btnExportar{
+        color: white;
+        height: 15px;
+        width: 15px;
+    }
+
+    .contenedorImagenes{
+        padding: 0px;
+    }
+    
+    .imgPdf{
+        height: 150px;
+        width: 150px;
+        margin-top: 10px;
+        margin-right: 5px;
+    }
+
+    .contenedorAgente{
+        display: flex;
+        /* flex-direction: column; */
+    }
+
+    .agenteAcargo{
+        margin-bottom: 20px;
+    }
+
+    .titAgente{
+        background: red;
+        color: white;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    
+    .agente{
+        flex-direction: column;
+        /* position: absolute; */
+        display: flex;
+        margin-top: 40px;
+        padding-right: 0px;
+    }
+    
+    #datosAgente{
+        margin-right: 5px;
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    
+    .fa-solid{
+        margin-right: 5px;
+    }
+    
+    #imgAgente{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .datos{
+        margin-top: 5px;
+        width: 50%;
+    }
+
+    .nombreEmp{
+        font-weight: bold;
+    }
+    
+    #infoDatos{
+        margin-bottom: 0px;
+        font-size: 11px;
+    }
+    
+    #lineaVertical{
+        margin-top: 5px;
+        margin-left: 90px;
+        border-left:4px 
+        solid gray;
+        height:80px;
+        width: 0px;
+    }
+
+    .datosOfyLogo{
+        display: flex;
+    }
+    
+    .logo{
+        margin-top: -135px;
+        margin-left: 330px;
+        width: 45%;
+    }
+    
+    #imgLogo{
+        width: 190px;
+        height: 190px;
+    }
+}
+
+@media(min-width: 769px) and (max-width: 1024px){
+    .contenedorNota{
+        margin-top: 25px;
+    }
+    
+    .tipoUnidad{
+        font-weight: lighter;
+    }
+    
+    #domicilio{
+        font-weight: bold;
+    }
+    
+    #infoUbicacion{
+        font-weight: lighter;
+    }
+    
+    .titulo{
+        margin-top: 20px;
+    }
+    
+    .nota{
+        color: rgb(120, 120, 120);
+        margin-top: 15px;
+        font-size: 10px;
+        text-align: left;
+    }
+    
+    .tipoPrecio {
+        display: flex;
+        margin-bottom: 15px;
+        margin-top: 20px;
+    }
+    
+    #tipo {
+        box-sizing: border-box;
+        display: block;
+        background: red;
+        border-radius: 4px;
+        padding: 7px 14px 7px 14px;
+        color: #fafafa;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    #precio {
+        border-top: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        padding: 6px 10px 6px 8px;
+        color: gray;
+        background: #fafafa;
+        margin-left: -4px;
+    }
+
+    .contBtn{
+        margin-left: 40%;
+    }
+
+    .btnExportar{
+        color: white;
+        height: 15px;
+        width: 15px;
+    }
+    
+    .imgPdf{
+        height: 180px;
+        width: 150px;
+        margin-top: 20px;
+        margin-right: 5px;
+    }
+
+    .agenteAcargo{
+        margin-bottom: 20px;
+    }
+
+    .titAgente{
+        background: red;
+        color: white;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    
+    .agente{
+        display: inline;
+        margin-top: 100px;
+        padding-right: 0px;
+    }
+    
+    #datosAgente{
+        margin-right: 5px;
+        font-size: 11px;
+    }
+    
+    .fa-solid{
+        margin-right: 5px;
+    }
+    
+    #imgAgente{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+
+    .datosOfyLogo{
+        display: flex;
+    }
+    
+    .datos{
+        margin-top: 5px;
+        width: 50%;
+    }
+
+    .nombreEmp{
+        font-weight: bold;
+    }
+    
+    #infoDatos{
+        margin-bottom: 0px;
+        font-size: 15px;
+    }
+    
+    #lineaVertical{
+        margin-top: 10px;
+        margin-left: 15px;
+        border-left:4px solid gray;
+        height:100px;
+        width: 0px;
+    }
+    
+    .logo{
+        margin-top: -150px;
+        margin-left: 270px;
+        width: 45%;
+    }
+    
+    #imgLogo{
+        width: 190px;
+        height: 190px;
+    }
+}
+
+@media(min-width: 1025px) and (max-width: 1440px) {
+    .contenedorNota{
+        margin-top: 25px;
+    }
+    
+    .tipoUnidad{
+        font-weight: lighter;
+    }
+    
+    #domicilio{
+        font-weight: bold;
+    }
+    
+    #infoUbicacion{
+        font-weight: lighter;
+    }
+    
+    .titulo{
+        margin-top: 20px;
+    }
+    
+    .nota{
+        color: rgb(120, 120, 120);
+        margin-top: 15px;
+        font-size: 10px;
+        text-align: left;
+    }
+    
+    .tipoPrecio {
+        display: flex;
+        margin-bottom: 15px;
+        margin-top: 20px;
+    }
+    
+    #tipo {
+        box-sizing: border-box;
+        display: block;
+        background: red;
+        border-radius: 4px;
+        padding: 7px 14px 7px 14px;
+        color: #fafafa;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    #precio {
+        border-top: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        padding: 6px 10px 6px 8px;
+        color: gray;
+        background: #fafafa;
+        margin-left: -4px;
+    }
+
+    .contBtn{
+        margin-left: 50%;
+    }
+
+    .btnExportar{
+        color: white;
+        height: 15px;
+        width: 15px;
+    }
+    
+    .imgPdf{
+        height: 200px;
+        width: 180px;
+        margin-top: 20px;
+        margin-right: 5px;
+    }
+
+    .agenteAcargo{
+        margin-bottom: 20px;
+    }
+
+    .titAgente{
+        background: red;
+        color: white;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    
+    .agente{
+        display: inline;
+        margin-top: 100px;
+        padding-right: 0px;
+    }
+    
+    #datosAgente{
+        margin-right: 5px;
+        font-size: 12px;
+    }
+    
+    .fa-solid{
+        margin-right: 5px;
+    }
+    
+    #imgAgente{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+    
+    .datos{
+        margin-top: 5px;
+        width: 50%;
+    }
+
+    .nombreEmp{
+        font-weight: bold;
+    }
+    
+    #infoDatos{
+        margin-bottom: 0px;
+    }
+    
+    #lineaVertical{
+        margin-top: 15px;
+        border-left:4px 
+        solid gray;
+        height:100px;
+        width: 0px;
+    }
+    
+    .logo{
+        margin-top: -50px;
+        width: 45%;
+    }
+    
+    #imgLogo{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media(min-width: 1441px) and (max-width: 2560px){
+    .contenedorNota{
+        margin-top: 25px;
+    }
+    
+    .tipoUnidad{
+        font-weight: lighter;
+    }
+    
+    #domicilio{
+        font-weight: bold;
+    }
+    
+    #infoUbicacion{
+        font-weight: lighter;
+    }
+    
+    .titulo{
+        margin-top: 30px;
+    }
+    
+    .nota{
+        color: rgb(120, 120, 120);
+        margin-top: 15px;
+        font-size: 15px;
+        text-align: left;
+    }
+    
+    .tipoPrecio {
+        display: flex;
+        margin-bottom: 15px;
+        margin-top: 20px;
+    }
+    
+    #tipo {
+        box-sizing: border-box;
+        display: block;
+        background: red;
+        border-radius: 4px;
+        padding: 7px 14px 7px 14px;
+        color: #fafafa;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    #precio {
+        border-top: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        padding: 6px 10px 6px 8px;
+        color: gray;
+        background: #fafafa;
+        margin-left: -4px;
+    }
+
+    .contBtn{
+        margin-left: 60%;
+    }
+
+    .btnExportar{
+        color: white;
+        height: 15px;
+        width: 15px;
+    }
+    
+    .imgPdf{
+        height: 250px;
+        width: 220px;
+        margin-top: 20px;
+        margin-right: 5px;
+    }
+
+    .agenteAcargo{
+        margin-bottom: 20px;
+    }
+
+    .titAgente{
+        background: red;
+        color: white;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    
+    .agente{
+        display: inline;
+        margin-top: 100px;
+        padding-right: 0px;
+    }
+    
+    #datosAgente{
+        margin-right: 5px;
+        font-size: 12px;
+    }
+    
+    .fa-solid{
+        margin-right: 5px;
+    }
+    
+    #imgAgente{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+    
+    .datos{
+        margin-top: 5px;
+        width: 50%;
+    }
+
+    .nombreEmp{
+        font-weight: bold;
+    }
+    
+    #infoDatos{
+        margin-bottom: 0px;
+    }
+    
+    #lineaVertical{
+        margin-top: 15px;
+        border-left:4px 
+        solid gray;
+        height:100px;
+        width: 0px;
+    }
+    
+    .logo{
+        margin-top: -50px;
+        width: 45%;
+    }
+    
+    #imgLogo{
+        width: 200px;
+        height: 200px;
+    }
+}
+

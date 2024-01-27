@@ -1,0 +1,81 @@
+#titulo {
+    text-align: center;
+}
+
+#contenedorModifcar{
+    padding: 10px;
+}
+
+#labelCodigo {
+    padding-top: 5px;
+}
+
+.codigo {
+    display: flex;
+}
+
+.inputBPoC{
+    margin-top: 5px;
+}
+
+.ejempliInput1{
+    resize: none;
+}
+
+.precio {
+    display: flex;
+}
+
+.titServicios {
+    margin-top: 20px;
+}
+
+#zona {
+    margin-left: 5px;
+}
+
+#inputCodigo {
+    margin-left: 10px;
+}
+
+#labelPrecio {
+    padding-top: 5px;
+}
+
+#inputPrecio {
+    margin-left: 10px;
+}
+
+#tipoUnidad {
+    width: 100%;
+}
+
+.selectaltura {
+    height: 35px;
+}
+
+#contenedorImg{
+    margin-top: 15px;
+}
+
+#imgAvatar {
+    margin-top: 25px;
+}
+
+#imagenAvatar{
+    margin-top: 10px;
+}
+
+#propietario {
+    width: 100%;
+}
+
+#btnGuardar{
+    width: 80%; 
+    margin-top: 20px;
+}
+
+#fotosAvatar{
+    width: 150px; 
+    height: 150px;
+}

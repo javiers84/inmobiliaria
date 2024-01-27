@@ -1,0 +1,74 @@
+.tabla {
+    width: 100%;
+}
+
+.titulo {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: black;
+}
+
+.itemTitulo {
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+#datosTabla{
+    margin-top: 25px;
+}
+
+.item {
+    color: black;
+    text-align: center;
+}
+
+.itemImg {
+    text-align: center;
+    width: 70px;
+    height: 70px;
+}
+
+.itemBtn {
+    padding-top: 20px;
+}
+
+#imagen {
+    width: 70px;
+    height: 70px;
+}
+
+.btnEliminar {
+    color: red;
+}
+
+.btnModificar {
+    color: blue;
+}
+
+.btnExportar {
+    color: gray;
+    margin-top: -40px;
+}
+
+/* .btnExport{
+    position: absolute;
+} */
+
+.opcionesExport{
+    /* position: absolute;  */
+    margin-right: 100px; 
+    z-index: 100;
+    border: none;
+    background: #adb5bd;
+    margin-right: 20px;
+}
+
+p {
+    visibility: hidden;
+}
+
+a:hover p {
+    visibility: visible;
+}

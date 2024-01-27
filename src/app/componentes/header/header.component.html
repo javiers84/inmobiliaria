@@ -1,0 +1,36 @@
+<!-- LOGO Y MENU -->
+<div class="row" id="menu">
+    <header>
+        <img class="logo" [routerLink]="['/principal']" src="assets/CopiaMarca.png" alt="Logo">
+        <button id="abrir" class="abrir-menu" (click)="abrirMenu()"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar" (click)="cerrarMenu()"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li>
+                    <a [routerLink]="['/principal']" (click)="cerrarMenu()" id="linkMenu">INICIO</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/propiedades']" (click)="cerrarMenu()" id="linkMenu">PROPIEDADES</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/servicios']" (click)="cerrarMenu()" id="linkMenu">SERVICIOS</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/empresa']" (click)="cerrarMenu()" id="linkMenu">LA EMPRESA</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/contacto']" (click)="cerrarMenu()" id="linkMenu">CONTACTO</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/dashboard']" *ngIf="!usuarioService.isLogued() 
+                    && (verificarRole() == 'administrador' || verificarRole() == 'encargado')" (click)="cerrarMenu()" id="linkMenu">DASHBOARD</a>
+                </li>
+                <hr id="lineaMenu">
+                <li>
+                    <a [routerLink]="['/login']" (click)="cerrarMenu()" id="linkMenu" *ngIf="usuarioService.isLogued()">LOGIN</a>
+                    <a [routerLink]="['/login']" (click)="cerrarMenu()" (click)="logout($event)" id="linkMenu" *ngIf="!usuarioService.isLogued()">LOGOUT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</div>

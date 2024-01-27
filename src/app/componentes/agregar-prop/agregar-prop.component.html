@@ -1,0 +1,245 @@
+<div class="row">
+    <div class="col-12">
+        <h1 id="titulo">Formulario de Ingreso de Propiedades</h1>
+    </div>
+</div>
+
+<div class="row" id="contenedorFormulario">
+    <div class="col-6">
+        <label for="zona" id="labelCodigo">Zona</label>
+        <div class="form-group codigo">
+            <select name="zona" id="zona" [(ngModel)]="zona">
+              <option id="valor" value="YBN">YBN</option>
+              <option id="valor" value="YBS">YBS</option>
+              <option id="valor" value="BNO">BNO</option>
+              <option id="valor" value="BSU">BSU</option>
+              <option id="valor" value="ZNO">ZNO</option>
+              <option id="valor" value="ZSU">ZSU</option>
+              <option id="valor" value="TVI">TVI</option>
+              <option id="valor" value="VCA">VCA</option>
+              <option id="valor" value="SMO">SMO</option>
+              <option id="valor" value="SME">SME</option>
+              <option id="valor" value="BRS">BRS</option>
+              <option id="valor" value="SAN">SPA</option>
+              <option id="valor" value="SAN">SJA</option>
+              <option id="valor" value="TDV">TDV</option>
+              <option id="valor" value="OTR">OTR</option>
+            </select>
+            <input type="text" [(ngModel)]="codigo" name="codigo" class="form-control" id="inputCodigo" placeholder="codigo" disabled>
+        </div>
+        <div class="form-group">
+            <label for="ejempliInput1">direccion</label>
+            <input type="text" [(ngModel)]="domicilio" name="domicilio" class="form-control" id="ejempliInput1" placeholder="Ingresa la direccion">
+        </div>
+        <div class="form-group" id="checkCountry">
+            <label>
+                <input type="checkbox" [(ngModel)]="country" name="country" id="inputBPoC" (click)="checkOnoCheck()">
+                Barrio Privado o Country
+            </label>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <div class="form-group">
+                    <!-- <label for="ejempliInput1">Manzana</label> -->
+                    <input type="text" [(ngModel)]="manzana" name="manzana" class="form-control" id="manzana" placeholder="Manzana" disabled>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="form-group">
+                    <!-- <label for="ejempliInput1">Lote</label> -->
+                    <input type="text" [(ngModel)]="lote" name="lote" class="form-control" id="lote" placeholder="Lote" disabled>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="ejempliInput1">Ciudad</label>
+            <!-- <input type="text" [(ngModel)]="ciudad" name="ciudad" class="form-control" id="ejempliInput1" placeholder="Ingresa la Ciudad"> -->
+            <select name="zona" id="ciudad" [(ngModel)]="ciudad" class="selectaltura">
+                <option data-name="Capital" value="capital" name="tipoUnidad" id="tipoUnidad">S. M. Tucuman</option>
+                <option data-name="Yerba Buena" value="yerbaBuena" name="tipoUnidad" id="tipoUnidad">Yerba Buena</option>
+                <option data-name="Tafi Viejo" value="Tafi Viejo" name="tipoUnidad" id="tipoUnidad">Tafi Viejo</option>
+                <option data-name="Tafi del Valle" value="Tafi del Valle" name="tipoUnidad" id="tipoUnidad">Tafi del Valle</option>
+                <option data-name="Los Nogales" value="Los Nogales" name="tipoUnidad" id="tipoUnidad">Los Nogales</option>
+                <option data-name="Las Talitas" value="Las Talitas" name="tipoUnidad" id="tipoUnidad">Las Talitas</option>
+                <option data-name="San Andres" value="San Andres" name="tipoUnidad" id="tipoUnidad">San Andres</option>
+                <option data-name="San Javier" value="San Javier" name="tipoUnidad" id="tipoUnidad">San Javier</option>
+                <option data-name="Otro" value="Otro" name="tipoUnidad" id="tipoUnidad">Otro</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="ejempliInput1">Provincia</label>
+            <input type="text" [(ngModel)]="provincia" name="provincia" class="form-control" id="ejempliInput1" placeholder="Ingresa la Provincia">
+        </div>
+        <div class="form-group">
+            <label for="ejempliInput1">Tipo de Unidad</label>
+            <br>
+            <select class="selectaltura" [(ngModel)]="tipoUnidad" name="tipoUnidad" id="tipoUnidad">
+                <option value="departamento">Departamento</option>
+                <option value="casa">Casa</option>
+                <option value="terreno">Terreno</option>
+                <option value="local">Local Comercial</option>
+                <option value="predio">Predio</option>
+                <option value="fondoComercio">Fondo de Comercio</option>
+                <option value="campo">Campo</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="ejempliInput1">Tipo de Operacion</label>
+            <br>
+            <select class="selectaltura" [(ngModel)]="tipoOperacion" name="tipoOperacion" id="tipoUnidad">
+                <option value="venta">Venta</option>
+                <option value="alquiler">Alquiler</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="ejempliInput1">Descripcion</label>
+            <textarea [(ngModel)]="descripcion" name="descripcion" class="form-control" id="ejempliInput1" placeholder="Ingresa la Descripcion" cols="30" rows="10" style="resize: none;"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="ejempliInput1">Metros Propios/Construidos</label>
+            <input type="text" [(ngModel)]="metrosPropios" name="metrosPropios" class="form-control" id="ejempliInput1" placeholder="Ingresa los metros propios">
+        </div>
+        <div class="form-group">
+            <label for="ejempliInput1">Metros Totales/Terreno</label>
+            <input type="text" [(ngModel)]="metrosTotales" name="metrosTotales" class="form-control" id="ejempliInput1" placeholder="Ingresa los metros totales">
+        </div>
+        <div class="form-group">
+            <label for="ejempliInput1">Dormitorios</label>
+            <input type="text" [(ngModel)]="dormitorios" name="dormitorios" class="form-control" id="ejempliInput1" placeholder="Ingresa la cantidad de Dormitorios">
+        </div>
+        <div class="form-group">
+            <label for="ejempliInput1">Baños</label>
+            <input type="text" [(ngModel)]="banos" name="banos" class="form-control" id="ejempliInput1" placeholder="Ingresa la cantidad de Banos">
+        </div>
+        <div class="form-group">
+            <label for="ejempliInput1">Expensas</label>
+            <input type="text" [(ngModel)]="expensas" name="expensas" class="form-control" id="ejempliInput1" placeholder="Ingresa valor de expensas">
+        </div>
+        <div class="form-group">
+            <label for="ejempliInput1">Antigüedad</label>
+            <input type="text" [(ngModel)]="antiguedad" name="antiguedad" class="form-control" id="ejempliInput1" placeholder="Ingresa la antiguedad">
+        </div>
+        <div class="form-group">
+            <label for="ejempliInput1">Estado</label>
+            <input type="text" [(ngModel)]="estado" name="estado" class="form-control" id="ejempliInput1" placeholder="Ingresa el estado gral del inmueble">
+        </div>
+        <div class="form-group">
+            <label for="ejempliInput1">Mapa</label>
+            <input type="text" [(ngModel)]="mapa" name="mapa" class="form-control" id="ejempliInput1" placeholder="Ingresa la direccion en el Mapa">
+        </div>
+        <label for="precio" id="labelPrecio">Precio</label>
+        <div class="form-group precio">
+            <select [(ngModel)]="tipoMoneda" name="tipoMoneda" id="precio">
+              <option id="valor">$</option>
+              <option id="valor">U$S</option>
+            </select>
+            <input type="text" [(ngModel)]="precio" name="precio" class="form-control" id="inputPrecio" placeholder="Precio">
+        </div>
+        <div class="form-group">
+            <label for="ejempliInput1">Propietario</label>
+            <br>
+            <select class="selectaltura" [(ngModel)]="idPropietario" name="idPropietario" id="propietario">
+                <option>select...</option>
+                <option *ngFor="let propietario of propietarios" [value]="propietario._id">{{ propietario.nombre }}</option>
+            </select>
+        </div>
+
+        <!-- //////// SERVICIOS /////// -->
+        <h3 class="titServicios">Servicios disponibles</h3>
+        <div class="row form-group">
+            <div class="col-4">
+                <input type="checkbox" [(ngModel)]="agua" value="agua" name="agua" id="agua"> Agua
+            </div>
+            <div class="col-4">
+                <input type="checkbox" [(ngModel)]="luz" value="luz" name="luz" id="luz"> Luz
+            </div>
+            <div class="col-4">
+                <input type="checkbox" [(ngModel)]="gas" value="gas" name="gas" id="gas"> Gas
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-4">
+                <input type="checkbox" [(ngModel)]="seguridad" value="seguridad" name="seguridad" id="seguridad"> Seguridad
+            </div>
+            <div class="col-4">
+                <input type="checkbox" [(ngModel)]="porteria" value="porteria" name="porteria" id="porteria"> Porteria
+            </div>
+            <div class="col-4">
+                <input type="checkbox" [(ngModel)]="cloacas" value="cloacas" name="cloacas" id="cloacas"> Cloacas
+            </div>
+        </div>
+    </div>
+    <div class="col-6" id="contenedorImg">
+        <!-- ///////// IMAGEN 1 ////////// -->
+        <div class="form-group" id="imgAvatar">
+            <div class="row">
+                <div class="col-2" id="divAvatar">
+                    <img src="data:image/png;base64,{{ imagenSeleccionadaUno }}" class="imgSeleccionadaAvatar">
+                </div>
+            </div>
+        </div>
+        <div class="form-group contenedorInputImg">
+            <input type="file" id="avatar" (change)="onFileChange1($event)" #fileInput>
+            <button type="button" class="btn btn-sm btn-primary" (click)="clearFile1()">Borrar</button>
+        </div>
+
+        <!-- ///////// IMAGEN 2 ////////// -->
+        <div class="form-group" id="imgAvatar">
+            <div class="row">
+                <div class="col-2" id="divAvatar">
+                    <img src="data:image/png;base64,{{ imagenSeleccionadaDos }}" class="imgSeleccionadaAvatar">
+                </div>
+            </div>
+        </div>
+        <div class="form-group contenedorInputImg">
+            <input type="file" id="avatar" (change)="onFileChange2($event)" #fileInput>
+            <button type="button" class="btn btn-sm btn-primary" (click)="clearFile2()">Borrar</button>
+        </div>
+
+        <!-- ///////// IMAGEN 3 ////////// -->
+        <div class="form-group" id="imgAvatar">
+            <div class="row">
+                <div class="col-2" id="divAvatar">
+                    <img src="data:image/png;base64,{{ imagenSeleccionadaTres }}" class="imgSeleccionadaAvatar">
+                </div>
+            </div>
+        </div>
+        <div class="form-group contenedorInputImg">
+            <input type="file" id="avatar" (change)="onFileChange3($event)" #fileInput>
+            <button type="button" class="btn btn-sm btn-primary" (click)="clearFile3()">Borrar</button>
+        </div>
+
+        <!-- ///////// IMAGEN 4 ////////// -->
+        <div class="form-group" id="imgAvatar">
+            <div class="row">
+                <div class="col-2" id="divAvatar">
+                    <img src="data:image/png;base64,{{ imagenSeleccionadaCuatro }}" class="imgSeleccionadaAvatar">
+                </div>
+            </div>
+        </div>
+        <div class="form-group contenedorInputImg">
+            <input type="file" id="avatar" (change)="onFileChange4($event)" #fileInput>
+            <button type="button" class="btn btn-sm btn-primary" (click)="clearFile4()">Borrar</button>
+        </div>
+
+        <!-- ///////// IMAGEN 5 ////////// -->
+        <div class="form-group" id="imgAvatar">
+            <div class="row">
+                <div class="col-2" id="divAvatar">
+                    <img src="data:image/png;base64,{{ imagenSeleccionadaCinco }}" class="imgSeleccionadaAvatar">
+                </div>
+            </div>
+        </div>
+        <div class="form-group contenedorInputImg">
+            <input type="file" id="avatar" (change)="onFileChange5($event)" #fileInput>
+            <button type="button" class="btn btn-sm btn-primary" (click)="clearFile5()">Borrar</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8 justify-content-center">
+            <button type="button" id="btnAgregarDatos" class="btn btn-sm btn-primary" (click)="agregarPropiedad()">Agregar</button>
+        </div>
+    </div>
+</div>

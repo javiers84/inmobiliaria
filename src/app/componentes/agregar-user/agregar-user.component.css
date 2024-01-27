@@ -1,0 +1,39 @@
+.divImagen{
+    margin-top: 25px;
+    margin-left: 20%;
+}
+
+.inputImagen {
+    margin-top: 20px;
+    height: 40px;
+    margin-left: -10%;
+}
+
+.botonImg {
+    margin-top: 5px;
+}
+
+#divImgSeleccionada{
+    margin-left:10px;
+}
+
+#imagen {
+    width: 100px;
+    height: 100px;
+}
+
+#muestraImg {
+    display: inline-block;
+    margin-left: 10%;
+}
+
+.selectaltura{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+}
+
+#btnAgregar{
+    width: 80%; 
+    margin-top: 20px;
+}

@@ -1,0 +1,78 @@
+<div class="container">
+    <div class="col-12">
+
+        <!-- //////// TITULO /////////// -->
+        <div class="titulo">
+            <h1>LISTADO DE PROPIEDADES</h1>
+        </div>
+
+        <!-- ///////// TABLA ///////// -->
+        <div class="listado">
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <td class="itemTitulo">Foto</td>
+                        <td class="itemTitulo">Domicilio</td>
+                        <td class="itemTitulo">Propietario</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </thead>
+
+                <tbody id="datosTabla">
+                    <tr *ngFor="let propiedad of propiedades">
+                        <td class="itemImg"><img src="http://localhost:3000/{{ propiedad.imagen1 }}" id="imagen"
+                                class="card-img-top"></td>
+                        <td class="item">{{ propiedad.domicilio }}</td>
+                        <td class="item">{{ propiedad.idPropietario.nombre }}</td>
+                        <!-- <td class="itemBtn"><button class="btn btn-primary" (click)="modificarPropiedad(propiedad._id)">Modificar</button></td> -->
+                        <td class="itemBtn">
+                            <a class="btn" [routerLink]="['/dashboard/modificar-prop', propiedad._id]"
+                                (click)="modificarPropiedad(propiedad._id)">
+                                <i class="fas fa-file-edit btnModificar"></i>
+                                <p>modificar</p>
+                            </a>
+                        </td>
+                        <td class="itemBtn">
+                            <a class="btn" (click)="eliminarPropiedad(propiedad._id)">
+                                <i class="fas fa-trash-alt btnEliminar"></i>
+                                <p>eliminar</p>
+                            </a>
+                        </td>
+                        <td class="itemBtn">
+
+                            <a class="btn btnExportar" (click)="exportarPropiedad(propiedad._id)">
+                                ver ficha
+                            </a>
+
+                            <!-- <div class="dropdown">
+                                <a class="btn " data-bs-toggle="collapse" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-share-square btnExportar"></i>
+                                <p>exportar</p>
+                                </a> 
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li>
+                                        <a class="btn" (click)="exportarPropiedad(propiedad._id)" >
+                                            ver ficha
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <a class="btn" (click)="exportarPropiedad(propiedad._id)" >
+                                            PDF
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <a class="btn" (click)="exportarPropiedad(propiedad._id)" >
+                                            URL
+                                        </a> 
+                                    </li>
+                                </ul>
+                            </div> -->
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,61 @@
+<div class="contenedor">
+    <div class="row ">
+      <div class="col-12 titulo">
+        <h2 class="textTitulo justify-content-center">AGREGAR CLIENTE</h2>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-9 formulario">
+        <div class="form-group">
+          <label for="ejempliInput1">Nombre</label>
+          <input type="text" [(ngModel)]="nombre" name="nombre" class="form-control" id="ejempliInput1" placeholder="Ingresa el Nombre">
+        </div>
+        <div class="form-group">
+          <label for="ejempliInput1">Domicilio</label>
+          <input type="text" [(ngModel)]="domicilio" name="domicilio" class="form-control" id="ejempliInput1" placeholder="Ingresa el Domicilio">
+        </div>
+        <div class="form-group">
+          <label for="ejempliInput1">Ciudad</label>
+          <input type="text" [(ngModel)]="ciudad" name="ciudad" class="form-control" id="ejempliInput1" placeholder="Ingresa la Ciudad">
+        </div>
+        <div class="form-group">
+          <label for="ejempliInput1">Provincia</label>
+          <input type="text" [(ngModel)]="provincia" name="provincia" class="form-control" id="ejempliInput1" placeholder="Ingresa la Provincia">
+        </div>
+        <div class="form-group">
+          <label for="ejempliInput1">Celular</label>
+          <input type="text" [(ngModel)]="celular" name="celular" class="form-control" id="ejempliInput1" placeholder="Ingresa el Celular">
+        </div>
+        <div class="form-group">
+          <label for="ejempliInput1">Mail</label>
+          <input type="text" [(ngModel)]="mail" name="mail" class="form-control" id="ejempliInput1" placeholder="Ingresa el Mail">
+        </div>
+        <div class="form-group condicion">
+          <label for="ejempliInput1">Condicion</label>
+          <br>
+          <select class="selectaltura" [(ngModel)]="condicionCliente" name="condicionCliente" id="condicionCliente">
+            <option id="valor">Propietario</option>
+            <option id="valor">Inquilino</option>
+            <option id="valor">Otro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="ejempliInput1">Propiedades</label>
+          <br>
+          <select class="selectaltura" [(ngModel)]="idPropiedad" name="idPropiedad" id="propiedad">
+              <option>select...</option>
+              <option >Ninguna</option>
+              <option *ngFor="let propiedad of propiedades" [value]="propiedad._id">{{ propiedad.domicilio }}</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row justify-content-center">
+      <!-- <div class="col-2"></div> -->
+      <div class="col-9">
+          <button type="button" id="btnAgregar" class="btn btn-sm btn-primary" (click)="agregarCliente()">Agregar</button>
+      </div>
+  </div>
+  </div>

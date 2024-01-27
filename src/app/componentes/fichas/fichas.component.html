@@ -1,0 +1,217 @@
+<div class="container" id="leerPDF">
+    <div class="row">
+      <!-- INFORMACION -->
+      <div class="col-6">
+        <div class="row ">
+          <!-- TIPO DE UNIDAD -->
+          <h5 class="tipoUnidad">
+            {{ tipoUnidad }}
+          </h5>
+  
+          <div class="ubicacion">
+            <h2 id="domicilio">{{ domicilio }}</h2>
+          </div>
+  
+          <div class="info">
+            <h5 id="infoUbicacion">{{ ciudad }} | {{ provincia }}</h5>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-12">
+            <h2 class="titulo">Descripcion</h2>
+            <hr>
+            <p id="datosYdetalles">{{ descripcion }}</p>
+            <br>
+            <!-- DETALLES -->
+            <h2 class="titulo">Detalles</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6" id="dormitorios">
+                <p id="datosYdetalles">
+                  <span class="fas fa-caret-right">
+                  </span> Dormitorios: {{ dormitorios }}
+                </p>
+              </div>
+              <div class="col-6" id="banos">
+                <p id="datosYdetalles">
+                  <span class="fas fa-caret-right">
+                  </span> Baños: {{ banos }}
+                </p>
+              </div>
+  
+              <div class="col-6" id="antiguedad">
+                <p id="datosYdetalles">
+                  <span class="fas fa-caret-right">
+                  </span> Antigüedad: {{ antiguedad }}
+                </p>
+              </div>
+              <div class="col-6" id="mtsCubiertos">
+                <p id="datosYdetalles">
+                  <span class="fas fa-caret-right">
+                  </span> Cubierto: {{ metrosPropios }} m2
+                </p>
+              </div>
+  
+              <div class="col-6" id="mtsTotales">
+                <p id="datosYdetalles">
+                  <span class="fas fa-caret-right">
+                  </span> Terreno: {{ metrosTotales }} m2
+                </p>
+              </div>
+              <div class="col-6" id="estado">
+                <p id="datosYdetalles">
+                  <span class="fas fa-caret-right">
+                  </span> Condicion: {{ estado }}
+                </p>
+              </div>
+            </div>
+  
+            <br>
+            <h2 class="titulo">Servicios</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6 col-lg-4" id="agua">
+                <p id="datosYdetalles">
+                  <span class="fas fa-caret-right">
+                  </span> {{ agua }}
+                </p>
+              </div>
+              <div class="col-6 col-lg-4" id="luz">
+                <p id="datosYdetalles">
+                  <span class="fas fa-caret-right">
+                  </span> {{ luz }}
+                </p>
+              </div>
+              <div class="col-6 col-lg-4" id="gas">
+                <p id="datosYdetalles">
+                  <span class="fas fa-caret-right">
+                  </span> {{ gas }}
+                </p>
+              </div>
+              <div class="col-6 col-lg-4" id="seguridad">
+                <p id="datosYdetalles">
+                  <span class="fas fa-caret-right">
+                  </span> {{ seguridad }}
+                </p>
+              </div>
+              <div class="col-6 col-lg-4" id="porteria">
+                <p id="datosYdetalles">
+                  <span class="fas fa-caret-right">
+                  </span> {{ porteria }}
+                </p>
+              </div>
+              <div class="col-6 col-lg-4" id="cloacas">
+                <p id="datosYdetalles">
+                  <span class="fas fa-caret-right">
+                  </span> {{ cloacas }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FOTOS Y DATOS AGENTE -->
+      <div class="col-6">
+        <div class="row">
+          <div class="row">
+            <div class="tipoPrecio">
+              <!-- TIPO -->
+              <div id="tipo">
+                {{ tipoOperacion }}
+              </div>
+              <!-- PRECIO -->
+              <div id="precio">
+                <div>
+                  {{ tipoMoneda }} {{ precio }}
+                </div>
+              </div>
+  
+              <!-- BOTON DESCARGAR -->
+              <div class="dropdown contBtn" *ngIf="!usuarioService.isLogued()" id="btnExpor">
+                <a class="btn btn-danger" data-bs-toggle="collapse" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-share-square btnExportar"></i>
+                </a> 
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li>
+                        <a class="btn" (click)="exportarPropiedad()" >
+                            PDF
+                        </a> 
+                    </li>
+                    <li>
+                        <a class="btn" (click)="copiar()" >
+                            URL
+                        </a> 
+                    </li>
+                </ul>
+            </div>
+
+            <!-- FOTOS PROPIEDAD -->
+            </div>
+          </div>
+          <div class="col-6 col-lg-4 contenedorImagenes">
+            <img src="{{imagenUno}}" class="imgPdf" alt="">
+          </div>
+          <div class="col-6 col-lg-4 contenedorImagenes">
+            <img src="{{imagenDos}}" class="imgPdf" alt="">
+          </div>
+          <div class="col-6 col-lg-4 contenedorImagenes">
+            <img src="{{imagenTres}}" class="imgPdf" alt="">
+          </div>
+          <div class="col-6 col-lg-4 contenedorImagenes">
+            <img src="{{imagenCuatro}}" class="imgPdf" alt="">
+          </div>
+          <div class="col-6 col-lg-4 contenedorImagenes">
+            <img src="{{imagenCinco}}" class="imgPdf" alt="">
+          </div>
+
+          <!-- DATOS AGENTE  -->
+          <div class="row contenedorAgente">
+            <div class="col-xs-12 col-sm-12 col-md-12 agente">
+              <div class="agenteAcargo">
+                <h5 ><span class="titAgente">AGENTE A CARGO</span></h5>
+              </div>
+              <!-- <img src="http://localhost:3000/{{imagenUno}}" id="imgAgente" alt=""> -->
+              <!-- <p id="tipo">AGENTE A CARGO</p> -->
+              <img src="{{foto}}" id="imgAgente" alt="" class="datosUser col-xs-12 col-sm-12 col-md-6">
+              <span class="datosUser col-xs-12 col-sm-12 col-md-6" id="datosAgente"><i class="fa-solid fa-user usuario"></i>{{ nombre }}</span>
+              <span class="datosUser col-xs-12 col-sm-12 col-md-6" id="datosAgente"><i class="fa-solid fa-phone telefono"></i>{{ telefono }}</span>
+              <span class="datosUser col-xs-12 col-sm-12 col-md-6" id="datosAgente"><i class="fa-solid fa-envelope mail"></i>{{ mail }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row">
+      <!-- NOTA IMPORTANTE -->
+      <div class="col-lg-5 col-xs-12">
+        <!-- NOTA IMPORTANTE -->
+        <div class="contenedorNota">
+          <hr class="lineaInf">
+          <p class="nota">
+            Nota importante: toda la información y medidas provistas son aproximadas y deberán
+            ratificarse con la documentación correspondiente y no compromete contractualmente a
+            nuestra empresa. Los gastos informados corresponden a la última información recibida
+            y deberán confirmarse. Las fotos no son vinculantes ni contractuales.
+          </p>
+        </div>
+      </div>
+      <div class="col-1"></div>
+      <!-- LOGO E INFO EMPRESA -->
+      <div class="col-6 justify-content-right">
+        <div class="row datosOfyLogo">
+          <div class="datos">
+            <p class="nombreEmp" id="infoDatos">JORGE MARIÑO NEGOCIOS INMOBILIARIOS</p>
+            <p id="infoDatos">Cariola Nº 2003 - Piso 1 Of. 2</p>
+            <p id="infoDatos">3815482268 - 3815666633</p>
+            <p id="infoDatos">www.marinoinmobiliaria.com.ar</p>
+          </div>
+          <div id="lineaVertical"></div>
+          <div class="logo">
+            <img src="../../../assets/Marca.png" id="imgLogo" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

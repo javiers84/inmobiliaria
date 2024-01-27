@@ -1,0 +1,31 @@
+#titulo {
+    text-align: center;
+}
+
+.codigo {
+    display: flex;
+}
+
+.titServicios {
+    margin-top: 20px;
+}
+
+#zona {
+    margin-left: 5px;
+}
+
+#labelCodigo {
+    padding-top: 5px;
+}
+
+#inputCodigo {
+    margin-left: 10px;
+}
+
+#selectCliente {
+    width: 100%;
+}
+
+.selectaltura {
+    height: 35px;
+}

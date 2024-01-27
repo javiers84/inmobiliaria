@@ -1,0 +1,560 @@
+@media(min-width: 425px){
+    .datosContacto {
+        margin-top: 2%;
+        z-index: -10;
+    }
+
+    #frameMapa{
+        border: 0;
+        width: 100%;
+        padding: 0%;
+    }
+    
+    .contenedorDatos {
+        margin: 0px;
+        width: 100%;
+        display: flex;
+    }
+
+    .divcontenedorframe {
+        margin: 0px;
+    }
+    
+    .iconos {
+        color: black;
+        width: 50px;
+        height: 50px;
+    }
+    
+    #tituloInfo{
+        color: rgb(110, 110, 110);
+        margin-top: 10px;
+    }
+    
+    #textoInfo{
+        color: rgb(180, 180, 180);
+    }
+    
+    #divContenedorFormulario{
+        border: 1px solid gray; 
+        border-radius: 7px; 
+        -webkit-box-shadow: 1px 2px 28px 1px rgba(0,0,0,0.52);
+        -moz-box-shadow: 1px 2px 28px 1px rgba(0,0,0,0.52);
+        box-shadow: 1px 2px 28px 1px rgba(0,0,0,0.52);
+    }
+    
+    .tituloFormulario{
+        font-size: 30px; 
+        font-family: arial black; 
+        margin-bottom: 0;
+    }
+    
+    #titForm{
+        text-align: center;
+    }
+    
+    .containerLeyenda{
+        font-size: 20px; 
+        font-family: courier; 
+        margin-top: 0; 
+        margin-bottom: 30px;
+    }
+    
+    #leyenda{
+        text-align: center;
+        font-size: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .inputContact {
+        margin-bottom: 10px;
+        width: 98%;
+        margin-left: 1%;
+    }
+    
+    .containerMje{
+        margin-bottom: 15px;
+    }
+    
+    #mensaje {
+        width: 98%;
+        height: 230px;
+        max-height: 230px;
+        min-height: 230px;
+        max-width: 98%;
+        min-width: 98%;
+        margin-left: 1%;
+        resize: none;
+    }
+    
+    #contenedorBtn{
+        margin-bottom: 20px; 
+        margin-top: 20px;
+    }
+    
+    #submit {
+        width: auto;
+        margin-left: 38%;
+    }
+    
+    .icono {
+        margin-right: 5px;
+    }    
+}
+
+@media (min-width: 426px) and (max-width: 768px){
+    .datosContacto {
+        margin-top: 2%;
+        z-index: -10;
+    }
+
+    #frameMapa{
+        border: 0;
+        width: 100%;
+        padding: 0%;
+    }
+    
+    .contenedorDatos {
+        margin: 0px;
+        padding-left: 10%;
+        width: 100%;
+        display: flex;
+    }
+
+    .divcontenedorframe {
+        margin: 0px;
+    }
+    
+    .iconos {
+        color: black;
+        width: 50px;
+        height: 50px;
+    }
+    
+    #tituloInfo{
+        color: rgb(110, 110, 110);
+        margin-top: 10px;
+    }
+    
+    #textoInfo{
+        color: rgb(180, 180, 180);
+    }
+    
+    #divContenedorFormulario{
+        border: 1px solid gray; 
+        border-radius: 7px; 
+        -webkit-box-shadow: 1px 2px 28px 1px rgba(0,0,0,0.52);
+        -moz-box-shadow: 1px 2px 28px 1px rgba(0,0,0,0.52);
+        box-shadow: 1px 2px 28px 1px rgba(0,0,0,0.52);
+    }
+    
+    .tituloFormulario{
+        font-size: 30px; 
+        font-family: arial black; 
+        margin-bottom: 0;
+    }
+    
+    #titForm{
+        text-align: center;
+    }
+    
+    .containerLeyenda{
+        font-size: 20px; 
+        font-family: courier; 
+        margin-top: 0; 
+        margin-bottom: 30px;
+    }
+    
+    #leyenda{
+        text-align: center;
+        font-size: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .inputContact {
+        margin-bottom: 10px;
+        width: 98%;
+        margin-left: 1%;
+    }
+
+    .contDatos{
+        display: flex;
+    }
+    
+    .containerMje{
+        margin-bottom: 15px;
+    }
+    #telefono{
+        width: 97%;
+        margin-left: 7px;
+    }
+
+    #asunto{
+        margin-left: 15px;
+        width: 94%;
+    }
+    
+    #mensaje {
+        width: 98%;
+        height: 230px;
+        max-height: 230px;
+        min-height: 230px;
+        max-width: 98%;
+        min-width: 98%;
+        resize: none;
+    }
+    
+    #contenedorBtn{
+        margin-bottom: 20px; 
+        margin-top: 20px;
+    }
+    
+    #submit {
+        width: auto;
+        margin-left: 45%;
+    }
+    
+    .icono {
+        margin-right: 5px;
+    } 
+}
+
+@media(min-width: 769px) and (max-width: 1024px){
+    .datosContacto {
+        margin-top: 2%;
+        z-index: -10;
+    }
+
+    #frameMapa{
+        border: 0;
+    }
+    
+    .contenedorDatos {
+        margin: 0px;
+    }
+    
+    .divcontenedorframe {
+        margin: 0px;
+    }
+    
+    .iconos {
+        color: black
+    }
+    
+    #tituloInfo{
+        color: rgb(110, 110, 110);
+        margin-top: 10px;
+    }
+    
+    #textoInfo{
+        color: rgb(180, 180, 180);
+    }
+    
+    #divContenedorFormulario{
+        border: 1px solid gray; 
+        border-radius: 7px; 
+        -webkit-box-shadow: 1px 2px 28px 1px rgba(0,0,0,0.52);
+        -moz-box-shadow: 1px 2px 28px 1px rgba(0,0,0,0.52);
+        box-shadow: 1px 2px 28px 1px rgba(0,0,0,0.52);
+    }
+    
+    .tituloFormulario{
+        font-size: 30px; 
+        font-family: arial black; 
+        margin-bottom: 0;
+    }
+    
+    #titForm{
+        text-align: center;
+    }
+    
+    .containerLeyenda{
+        font-size: 20px; 
+        font-family: courier; 
+        margin-top: 0; 
+        margin-bottom: 30px;
+    }
+    
+    #leyenda{
+        text-align: center;
+    }
+    
+    .inputContact {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .contDatos{
+        display: flex;
+    }
+
+    #telefono{
+        width: 97%;
+        margin-left: 5px;
+    }
+
+    #asunto{
+        margin-left: 15px;
+        width: 97%;
+    }
+    
+    .containerMje{
+        margin-bottom: 15px;
+    }
+    
+    #mensaje {
+        width: 91%;
+        height: 230px;
+        max-height: 230px;
+        min-height: 230px;
+        max-width: 91%;
+        min-width: 91%;
+        margin-left: 5px;
+        resize: none;
+    }
+    
+    #contenedorBtn{
+        margin-bottom: 20px; 
+        margin-top: 20px;
+    }
+    
+    #submit {
+        width: 15%;
+        margin-left: 42%;
+    }
+    
+    .icono {
+        margin-right: 5px;
+    }
+}
+
+@media(min-width: 1025px) and (max-width: 1440px){
+    .datosContacto {
+        margin-top: 2%;
+        z-index: -10;
+    }
+
+    #frameMapa{
+        border: 0;
+    }
+    
+    .contenedorDatos {
+        margin: 0px;
+    }
+    
+    .divcontenedorframe {
+        margin: 0px;
+    }
+    
+    .iconos {
+        color: black
+    }
+    
+    #tituloInfo{
+        color: rgb(110, 110, 110);
+        margin-top: 10px;
+    }
+    
+    #textoInfo{
+        color: rgb(180, 180, 180);
+    }
+    
+    #divContenedorFormulario{
+        border: 1px solid gray; 
+        border-radius: 7px; 
+        -webkit-box-shadow: 1px 2px 28px 1px rgba(0,0,0,0.52);
+        -moz-box-shadow: 1px 2px 28px 1px rgba(0,0,0,0.52);
+        box-shadow: 1px 2px 28px 1px rgba(0,0,0,0.52);
+    }
+    
+    .tituloFormulario{
+        font-size: 30px; 
+        font-family: arial black; 
+        margin-bottom: 0;
+    }
+    
+    #titForm{
+        text-align: center;
+    }
+    
+    .containerLeyenda{
+        font-size: 20px; 
+        font-family: courier; 
+        margin-top: 0; 
+        margin-bottom: 30px;
+    }
+    
+    #leyenda{
+        text-align: center;
+    }
+    
+    .inputContact {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .contDatos{
+        display: flex;
+    }
+
+    #telefono{
+        width: 97%;
+        margin-left: 5px;
+    }
+
+    #asunto{
+        margin-left: 15px;
+        width: 97%;
+    }
+    
+    .containerMje{
+        margin-bottom: 15px;
+    }
+    
+    #mensaje {
+        width: 91%;
+        height: 230px;
+        max-height: 230px;
+        min-height: 230px;
+        max-width: 91%;
+        min-width: 91%;
+        margin-left: 5px;
+        resize: none;
+    }
+    
+    #contenedorBtn{
+        margin-bottom: 20px; 
+        margin-top: 20px;
+    }
+    
+    #submit {
+        width: 10%;
+        margin-left: 45%;
+    }
+    
+    .icono {
+        margin-right: 5px;
+    }
+}
+
+@media(min-width: 1441px) and (max-width: 2560px){
+    .datosContacto {
+        margin-top: 2%;
+        z-index: -10;
+    }
+
+    #frameMapa{
+        border: 0;
+        height: 800px;
+    }
+    
+    .contenedorDatos {
+        margin: 0px;
+        margin-top: 50px;
+    }
+    
+    .divcontenedorframe {
+        margin: 0px;
+    }
+
+    .fa-3x{
+        font-size: 5em;
+    }
+    
+    .iconos {
+        color: black
+    }
+    
+    #tituloInfo{
+        color: rgb(110, 110, 110);
+        margin-top: 45px;
+    }
+    
+    #textoInfo{
+        color: rgb(180, 180, 180);
+        font-size: 30px;
+    }
+    
+    #divContenedorFormulario{
+        border: 1px solid gray; 
+        border-radius: 7px; 
+        -webkit-box-shadow: 1px 2px 28px 1px rgba(0,0,0,0.52);
+        -moz-box-shadow: 1px 2px 28px 1px rgba(0,0,0,0.52);
+        box-shadow: 1px 2px 28px 1px rgba(0,0,0,0.52);
+        width: 1500px;
+        height: 650px;
+        margin-left: -10%;
+    }
+    
+    .tituloFormulario{
+        font-family: arial black; 
+        margin-bottom: 0;
+    }
+    
+    #titForm{
+        font-size: 50px; 
+        text-align: center;
+    }
+    
+    .containerLeyenda{ 
+        font-family: courier; 
+        margin-top: 0; 
+        margin-bottom: 30px;
+    }
+    
+    #leyenda{
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .inputContact {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .contDatos{
+        display: flex;
+    }
+
+    #telefono{
+        width: 98%;
+        margin-left: 5px;
+    }
+
+    #asunto{
+        margin-left: 15px;
+        width: 98%;
+    }
+    
+    .containerMje{
+        margin-bottom: 15px;
+    }
+    
+    #mensaje {
+        width: 91%;
+        height: 230px;
+        max-height: 230px;
+        min-height: 230px;
+        max-width: 91%;
+        min-width: 91%;
+        margin-left: 5px;
+        resize: none;
+    }
+    
+    #contenedorBtn{
+        margin-bottom: 20px; 
+        margin-top: 20px;
+    }
+    
+    #submit {
+        width: 15%;
+        margin-left: 40%;
+        font-size: 35px;
+    }
+    
+    .icono {
+        margin-right: 5px;
+    }
+}

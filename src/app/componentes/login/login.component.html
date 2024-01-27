@@ -1,0 +1,38 @@
+<div class="row" id="contenedor">
+    <div class="col-12 justify-content-center">
+        <div class="container contenedorLogo">
+            <img id="imgLogo" src="../../../assets/logo-inmobiliaria.png" alt="">
+        </div>
+    </div>
+    <div class="col-3"></div>
+    <div class="col-6">
+
+        <form #logueo="ngForm" (ngSubmit)="login(logueo)" action="">
+            <span *ngIf="logueo.submitted && logueo.controls['user'].errors" class="text-danger animated fadeIn">Usuario incorrecto</span>
+            <div class="form-group">
+                <label id="textLabel" for="ejempliInput1">Usuario</label>
+                <input type="text" id="inputDatos" [(ngModel)]="user" name="user" class="form-control" placeholder="Ingresa el Usuario">
+            </div>
+            <span *ngIf="logueo.submitted && logueo.controls['pass'].errors" class="text-danger animated fadeIn">Contraseña incorrecta</span>
+            <div class="form-group">
+                <label id="textLabel" for="ejempliInput1">Password</label>
+                <input type="password" id="inputDatos" [(ngModel)]="pass" name="pass" class="form-control" placeholder="Ingresa el Password" (keyup.enter)="loginUsuario()">
+            </div>
+
+            <div class="contRecuerdame">
+                <input type="checkbox" name="recuerdame" id="recuerdame">
+                <p id="textRecuerdame"> Recuerdame</p>
+                <a [routerLink]="['/userRecupPass']" routerLinkActive="router-link-active" id="olvido" href="#">Olvido su contraseña?</a>
+                <!-- <div class="contRegistro"> -->
+                    <!-- <a [routerLink]="['/userRecupPass']" routerLinkActive="router-link-active" id="olvido" href="#">Olvido su contraseña?</a> -->
+                    <!-- <a [routerLink]="['/registro']" routerLinkActive="router-link-active" id="registrarse" href="#">Registrarse</a> -->
+                <!-- </div> -->
+            </div>
+        </form>
+    </div>
+    <div class="col-4"></div>
+    <div class="col-4">
+        <button [routerLink]="['/principal']" type="button" id="btnIngresar" class="btn btn-sm btn-primary" (click)="loginUsuario()">Ingresar</button>
+    </div>
+    <div class="col-4"></div>
+</div>

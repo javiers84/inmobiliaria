@@ -1,0 +1,541 @@
+@media (max-width: 425px){
+    .contenedorempresa {
+        margin: 0px;
+        margin-top: 2%;
+    }
+    
+    .empresa {
+        z-index: -10;
+        padding: 0px;
+    }
+    
+    #imgEmpresa {
+        height: 350px;
+        width: 100%;
+        padding: 0px;
+    }
+    
+    .nosotros {
+        width: 100%;
+        height: 300px;
+        justify-content: center;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 5%;
+        background: white;
+        color: black;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .misionyvision {
+        padding: 0px;
+        margin-top: 55%;
+    }
+    
+    .imgMision {
+        width: 100%;
+        height: 300px;
+        display: inline-block;
+    }
+    
+    .imgVision {
+        width: 100%;
+        height: 300px;
+        display: inline-block;
+        margin-top: 10px;
+    }
+    
+    .presentacion{
+        margin-top: 25px;
+        text-align: center;
+    }
+    
+    .prof{
+        color: red;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    
+    .equipo{
+        margin-top: 20px;
+        justify-content: center;
+        padding-left: 20%;
+    }
+    
+    .card-img-top{
+        border-radius: 0px;
+        height: 500px;
+    }
+    
+    .card{
+        --bs-card-border-width: 0px;
+    }
+    
+    .cardEquipo{
+        width: 21rem; 
+        padding: 0%; 
+        margin-right: 30px;
+    }
+    
+    .card-title{
+        font-size: 25px;
+        color: rgb(110, 110, 110);
+        text-align: center;
+    }
+    
+    .card-text{
+        color: red;
+        text-align: center;
+    }
+    
+    .card-descrip{
+        color: rgb(210, 210, 210);
+        font-size: 11px;
+    }
+    
+    #whatsapp {
+        color: black;
+        justify-content: center;
+    }
+    
+    #mail {
+        color: black;
+        justify-content: center;
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px){
+    .contenedorempresa {
+        margin: 0px;
+        margin-top: 2%;
+    }
+    
+    .empresa {
+        z-index: -10;
+        padding: 0px;
+    }
+    
+    #imgEmpresa {
+        height: 350px;
+        width: 100%;
+        padding: 0px;
+    }
+    
+    .nosotros {
+        width: 100%;
+        height: 300px;
+        justify-content: center;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 5%;
+        background: white;
+        color: black;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .misionyvision {
+        padding: 0px;
+        margin-top: 5%;
+    }
+    
+    .imgMision {
+        width: 100%;
+        height: 300px;
+        display: inline-block;
+    }
+    
+    .imgVision {
+        width: 100%;
+        height: 300px;
+        display: inline-block;
+        margin-top: 10px;
+    }
+    
+    .presentacion{
+        margin-top: 25px;
+        text-align: center;
+    }
+    
+    .prof{
+        color: red;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    
+    .equipo{
+        margin-top: 20px;
+        justify-content: center;
+        padding-left: 10%;
+    }
+    
+    .card-img-top{
+        border-radius: 0px;
+        height: 500px;
+    }
+    
+    .card{
+        --bs-card-border-width: 0px;
+    }
+    
+    .cardEquipo{
+        width: 15rem; 
+        padding: 0%; 
+        margin-right: 20px;
+    }
+    
+    .card-title{
+        font-size: 25px;
+        color: rgb(110, 110, 110);
+        text-align: center;
+    }
+    
+    .card-text{
+        color: red;
+        text-align: center;
+    }
+    
+    .card-descrip{
+        color: rgb(210, 210, 210);
+        font-size: 11px;
+    }
+    
+    #whatsapp {
+        color: black;
+        justify-content: center;
+    }
+    
+    #mail {
+        color: black;
+        justify-content: center;
+        margin-left: 10px;
+    }
+}
+
+@media(min-width: 769px) and (max-width: 1024px){
+    .contenedorempresa {
+        margin: 0px;
+        margin-top: 2%;
+    }
+    
+    .empresa {
+        z-index: -10;
+        padding: 0px;
+    }
+    
+    #imgEmpresa {
+        height: 350px;
+        width: 100%;
+        padding: 0px;
+    }
+    
+    .nosotros {
+        width: 100%;
+        height: 300px;
+        justify-content: center;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 5%;
+        background: white;
+        color: black;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .misionyvision {
+        display: flex;
+        padding: 0px;
+    }
+    
+    .imgMision {
+        width: 100%;
+        height: 300px;
+        display: inline-block;
+    }
+    
+    .imgVision {
+        width: 100%;
+        height: 300px;
+        display: inline-block;
+    }
+    
+    .presentacion{
+        margin-top: 25px;
+        text-align: center;
+    }
+    
+    .prof{
+        color: red;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    
+    .equipo{
+        margin-top: 20px;
+        justify-content: center;
+    }
+    
+    .card-img-top{
+        border-radius: 0px;
+        height: 500px;
+    }
+    
+    .card{
+        --bs-card-border-width: 0px;
+    }
+    
+    .cardEquipo{
+        width: 21rem; 
+        padding: 0%; 
+        margin-right: 30px;
+    }
+    
+    .card-title{
+        font-size: 25px;
+        color: rgb(110, 110, 110);
+        text-align: center;
+    }
+    
+    .card-text{
+        color: red;
+        text-align: center;
+    }
+    
+    .card-descrip{
+        color: rgb(210, 210, 210);
+        font-size: 11px;
+    }
+    
+    #whatsapp {
+        color: black;
+        justify-content: center;
+    }
+    
+    #mail {
+        color: black;
+        justify-content: center;
+        margin-left: 10px;
+    }
+}
+
+@media(min-width: 1025px) and (max-width: 1440px){
+    .contenedorempresa {
+        margin: 0px;
+        margin-top: 2%;
+    }
+    
+    .empresa {
+        z-index: -10;
+        padding: 0px;
+    }
+    
+    #imgEmpresa {
+        height: 350px;
+        width: 100%;
+        padding: 0px;
+    }
+    
+    .nosotros {
+        width: 100%;
+        height: 300px;
+        justify-content: center;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 5%;
+        background: white;
+        color: black;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .misionyvision {
+        display: flex;
+        padding: 0px;
+    }
+    
+    .imgMision {
+        width: 100%;
+        height: 300px;
+        display: inline-block;
+    }
+    
+    .imgVision {
+        width: 100%;
+        height: 300px;
+        display: inline-block;
+    }
+    
+    .presentacion{
+        margin-top: 25px;
+        text-align: center;
+    }
+    
+    .prof{
+        color: red;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    
+    .equipo{
+        margin-top: 20px;
+        justify-content: center;
+    }
+    
+    .card-img-top{
+        border-radius: 0px;
+        width: 350px;
+        height: 500px;
+    }
+    
+    .card{
+        --bs-card-border-width: 0px;
+    }
+    
+    .cardEquipo{
+        width: 21rem; 
+        padding: 0%; 
+        margin-right: 30px;
+    }
+    
+    .card-title{
+        font-size: 25px;
+        color: rgb(110, 110, 110);
+        text-align: center;
+    }
+    
+    .card-text{
+        color: red;
+        text-align: center;
+    }
+    
+    .card-descrip{
+        color: rgb(210, 210, 210);
+        font-size: 11px;
+    }
+    
+    #whatsapp {
+        color: black;
+        justify-content: center;
+    }
+    
+    #mail {
+        color: black;
+        justify-content: center;
+        margin-left: 10px;
+    }
+}
+
+@media(min-width: 1441px) and (max-width: 2560px){
+    .contenedorempresa {
+        margin: 0px;
+        margin-top: 2%;
+    }
+    
+    .empresa {
+        z-index: -10;
+        padding: 0px;
+    }
+    
+    #imgEmpresa {
+        height: 600px;
+        width: 100%;
+        padding: 0px;
+    }
+
+    .textEmpresa{
+        font-size: 30px;
+    }
+    
+    .nosotros {
+        width: 100%;
+        height: 300px;
+        justify-content: center;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 5%;
+        background: white;
+        color: black;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .misionyvision {
+        display: flex;
+        margin-top: 15%;
+        padding: 0px;
+    }
+    
+    .imgMision {
+        width: 100%;
+        height: 600px;
+        display: inline-block;
+    }
+    
+    .imgVision {
+        width: 100%;
+        height: 600px;
+        display: inline-block;
+    }
+    
+    .presentacion{
+        margin-top: 50px;
+        text-align: center;
+    }
+    
+    .prof{
+        color: red;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    
+    .equipo{
+        margin-top: 40px;
+        justify-content: center;
+    }
+    
+    .card-img-top{
+        border-radius: 0px;
+        height: 650px;
+    }
+    
+    .card{
+        --bs-card-border-width: 0px;
+        margin-top: 50px;
+    }
+    
+    .cardEquipo{
+        width: 40rem; 
+        padding: 0%; 
+        margin-right: 30px;
+    }
+    
+    .card-title{
+        font-size: 40px;
+        color: rgb(110, 110, 110);
+        text-align: center;
+    }
+    
+    .card-text{
+        color: red;
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    .card-descrip{
+        color: rgb(210, 210, 210);
+        font-size: 25px;
+    }
+    
+    #whatsapp {
+        color: black;
+        justify-content: center;
+    }
+    
+    #mail {
+        color: black;
+        justify-content: center;
+        margin-left: 10px;
+    }
+}

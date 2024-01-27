@@ -1,0 +1,83 @@
+<div class="row">
+    <div class="col-12">
+        <h1 id="titulo">Formulario de Ingreso de Administraciones</h1>
+    </div>
+</div>
+
+<div class="row" style="padding: 10px;">
+    <div class="col-12 justify-content-center">
+
+        <div class="form-group">
+            <label for="ejempliInput1">Inicio Contrato</label>
+            <input type="text" [(ngModel)]="inicioContrato" class="form-control" id="ejempliInput1" placeholder="Ingresa fecha inicio contrato">
+        </div>
+        <div class="form-group">
+            <label for="ejempliInput1">Fin Contrato</label>
+            <input type="text" [(ngModel)]="finContrato" class="form-control" id="ejempliInput1" placeholder="Ingresa fecha fin contrato">
+        </div>
+        <div class="form-group">
+            <label for="ejempliInput1">Precio Inicial</label>
+            <input type="text" [(ngModel)]="precioInicial" class="form-control" id="ejempliInput1" placeholder="Ingresa el precio inicial">
+        </div>
+        <div class="form-group">
+            <label for="ejempliInput1">Ajuste</label>
+            <input type="text" [(ngModel)]="ajuste" class="form-control" id="ejempliInput1" placeholder="Ingresa el tipo de ajuste">
+        </div>
+        <div class="form-group">
+            <label for="ejempliInput1">Porcentaje de Ajuste</label>
+            <input type="text" [(ngModel)]="porcentajeAjuste" class="form-control" id="ejempliInput1" placeholder="Ingresa el porcentaje de ajuste">
+        </div>
+        <div class="form-group">
+            <label for="ejempliInput1">Porcentaje de Honorarios</label>
+            <input type="text" [(ngModel)]="porcentajeHonorarios" class="form-control" id="ejempliInput1" placeholder="Ingresa el porcentaje de Honorarios">
+        </div>
+        <div class="form-group">
+            <label for="ejempliInput1">Monto de Honorarios</label>
+            <input type="text" [(ngModel)]="montoHonorarios" class="form-control" id="ejempliInput1" placeholder="Ingresa el monto de Honorarios">
+        </div>
+        <div class="form-group">
+            <label for="ejempliInput1">Expensas</label>
+            <input type="text" [(ngModel)]="expensas" class="form-control" id="ejempliInput1" placeholder="Ingresa el monto de Expensas">
+        </div>
+        <div class="form-group">
+            <label for="ejempliInput1">Cisi</label>
+            <input type="text" [(ngModel)]="cisi" class="form-control" id="ejempliInput1" placeholder="Ingresa el monto de cisi">
+        </div>
+        <div class="form-group">
+            <label for="ejempliInput1">Sat</label>
+            <input type="text" [(ngModel)]="sat" class="form-control" id="ejempliInput1" placeholder="Ingresa el valor de sat">
+        </div>
+        <div class="form-group">
+            <label for="ejempliInput1">Edet</label>
+            <input type="text" [(ngModel)]="edet" class="form-control" id="ejempliInput1" placeholder="Ingresa el valor de edet">
+        </div>
+        <div class="form-group">
+            <label for="ejempliInput1">Gasnor</label>
+            <input type="text" [(ngModel)]="gasnor" class="form-control" id="ejempliInput1" placeholder="Ingresa el valor de gasnor">
+        </div>
+        <div class="form-group">
+            <label for="ejempliInput1">Propietarios</label>
+            <br>
+            <select class="selectaltura" [(ngModel)]="idPropietario" name="idPropietario" id="selectCliente">
+              <option value="propietario">Propietario 1</option>
+              <option value="propietario">Propietario 1</option>
+          </select>
+        </div>
+        <div class="form-group">
+            <label for="ejempliInput1">Inquilinos</label>
+            <br>
+            <select class="selectaltura" [(ngModel)]="idInquilino" name="idInquilino" id="selectCliente">
+            <option value="inquilino">Inquilino 1</option>
+            <option value="inquilino">Inquilino 2</option>
+        </select>
+        </div>
+
+        <!-- /////////// BOTON GUARDAR ////////// -->
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 justify-content-center">
+                <button type="button" style="width: 80%; margin-top: 20px;" class="btn btn-sm btn-primary" (click)="agregarPropiedad()">Agregar</button>
+            </div>
+        </div>
+    </div>
+</div>
