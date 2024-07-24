@@ -32,10 +32,6 @@ export class LoginComponent implements OnInit{
     
     this.usuarioService.login(logueo).subscribe((resultado) => {
       var token = resultado.token;
-      console.log('token de usuario: ' + JSON.stringify(token));
-      // console.log('role de usuario logueado: ' + JSON.stringify(resultado.role.nombre));
-      console.log('datos de usuario: ' + JSON.stringify(resultado));
-      
       localStorage.setItem('token', resultado.token);
       localStorage.setItem('id', resultado.uid);
       localStorage.setItem('role', resultado.role.nombre);
@@ -44,7 +40,6 @@ export class LoginComponent implements OnInit{
       
       if( tokken ) {
         alert('Usuario y/o Password incorrectos');
-        // Swal.fire('Error', 'Usuario o Password incorrectos', 'error')
         return;
       }
 

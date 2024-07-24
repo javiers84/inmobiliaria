@@ -35,11 +35,35 @@ export class HeaderComponent implements OnInit {
   }
 
   verificarRole(){
-    this.role = localStorage.getItem('role');
 
-    this.authGuard.canActivate();
+    // this.usuarioService.validarToken().subscribe(resultado => {
 
-    return this.role;
+    //   if(resultado == true){
+
+        
+    //     this.role = localStorage.getItem('role');
+        
+    //     this.authGuard.canActivate();
+        
+    //     return this.role;
+    //   } else {
+
+    //     alert("token vencido!!");
+    //     this.router.navigate(['/login']);
+
+    //     return false;
+    //   }
+    // });
+
+
+        
+        this.role = localStorage.getItem('role');
+        
+        this.authGuard.canActivate();
+        
+        return this.role;
+
+        
   }
 
   logout(e: any){

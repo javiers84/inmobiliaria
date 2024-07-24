@@ -24,7 +24,7 @@ export class AgregarAdministracionComponent implements OnInit {
 
   constructor() { }
 
-  agregarPropiedad(){
+  agregarAdministracion(){
     
   }
 

@@ -1,4 +1,4 @@
-@media(min-width: 425px){
+@media(max-width: 425px){
     .datosContacto {
         margin-top: 2%;
         z-index: -10;
@@ -103,7 +103,112 @@
     }    
 }
 
-@media (min-width: 426px) and (max-width: 768px){
+@media (min-width: 426px) and (max-width: 620px){
+    .datosContacto {
+        margin-top: 2%;
+        z-index: -10;
+    }
+
+    #frameMapa{
+        border: 0;
+        width: 100%;
+        padding: 0%;
+    }
+    
+    .contenedorDatos {
+        margin: 0px;
+        width: 100%;
+        display: flex;
+    }
+
+    .divcontenedorframe {
+        margin: 0px;
+    }
+    
+    .iconos {
+        color: black;
+        width: 50px;
+        height: 50px;
+    }
+    
+    #tituloInfo{
+        color: rgb(110, 110, 110);
+        margin-top: 10px;
+    }
+    
+    #textoInfo{
+        color: rgb(180, 180, 180);
+    }
+    
+    #divContenedorFormulario{
+        border: 1px solid gray; 
+        border-radius: 7px; 
+        -webkit-box-shadow: 1px 2px 28px 1px rgba(0,0,0,0.52);
+        -moz-box-shadow: 1px 2px 28px 1px rgba(0,0,0,0.52);
+        box-shadow: 1px 2px 28px 1px rgba(0,0,0,0.52);
+    }
+    
+    .tituloFormulario{
+        font-size: 30px; 
+        font-family: arial black; 
+        margin-bottom: 0;
+    }
+    
+    #titForm{
+        text-align: center;
+    }
+    
+    .containerLeyenda{
+        font-size: 20px; 
+        font-family: courier; 
+        margin-top: 0; 
+        margin-bottom: 30px;
+    }
+    
+    #leyenda{
+        text-align: center;
+        font-size: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .inputContact {
+        margin-bottom: 10px;
+        width: 98%;
+        margin-left: 1%;
+    }
+    
+    .containerMje{
+        margin-bottom: 15px;
+    }
+    
+    #mensaje {
+        width: 98%;
+        height: 230px;
+        max-height: 230px;
+        min-height: 230px;
+        max-width: 98%;
+        min-width: 98%;
+        margin-left: 1%;
+        resize: none;
+    }
+    
+    #contenedorBtn{
+        margin-bottom: 20px; 
+        margin-top: 20px;
+    }
+    
+    #submit {
+        width: auto;
+        margin-left: 38%;
+    }
+    
+    .icono {
+        margin-right: 5px;
+    }  
+}
+
+@media (min-width: 621px) and (max-width: 768px){
     .datosContacto {
         margin-top: 2%;
         z-index: -10;
@@ -221,7 +326,125 @@
     } 
 }
 
-@media(min-width: 769px) and (max-width: 1024px){
+@media (min-width: 769px) and (max-width: 915px){
+    .datosContacto {
+        margin-top: 2%;
+        z-index: -10;
+    }
+
+    #frameMapa{
+        border: 0;
+        width: 100%;
+        padding: 0%;
+    }
+    
+    .contenedorDatos {
+        margin: 0px;
+        padding-left: 10%;
+        width: 100%;
+        display: flex;
+    }
+
+    .divcontenedorframe {
+        margin: 0px;
+    }
+    
+    .iconos {
+        color: black;
+        width: 50px;
+        height: 50px;
+    }
+    
+    #tituloInfo{
+        color: rgb(110, 110, 110);
+        margin-top: 10px;
+    }
+    
+    #textoInfo{
+        color: rgb(180, 180, 180);
+    }
+    
+    #divContenedorFormulario{
+        border: 1px solid gray; 
+        border-radius: 7px; 
+        -webkit-box-shadow: 1px 2px 28px 1px rgba(0,0,0,0.52);
+        -moz-box-shadow: 1px 2px 28px 1px rgba(0,0,0,0.52);
+        box-shadow: 1px 2px 28px 1px rgba(0,0,0,0.52);
+    }
+    
+    .tituloFormulario{
+        font-size: 30px; 
+        font-family: arial black; 
+        margin-bottom: 0;
+    }
+    
+    #titForm{
+        text-align: center;
+    }
+    
+    .containerLeyenda{
+        font-size: 20px; 
+        font-family: courier; 
+        margin-top: 0; 
+        margin-bottom: 30px;
+    }
+    
+    #leyenda{
+        text-align: center;
+        font-size: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .inputContact {
+        margin-bottom: 10px;
+        width: 98%;
+        margin-left: 1%;
+    }
+
+    .contDatos{
+        display: flex;
+    }
+    
+    .containerMje{
+        margin-bottom: 15px;
+    }
+    #telefono{
+        width: 97%;
+        margin-left: 7px;
+    }
+
+    #asunto{
+        margin-left: 15px;
+        width: 94%;
+    }
+    
+    #mensaje {
+        width: 98%;
+        height: 230px;
+        max-height: 230px;
+        min-height: 230px;
+        max-width: 98%;
+        min-width: 98%;
+        resize: none;
+    }
+    
+    #contenedorBtn{
+        margin-bottom: 20px; 
+        margin-top: 20px;
+    }
+    
+    #submit {
+        width: auto;
+        margin-left: 45%;
+    }
+    
+    .icono {
+        margin-right: 5px;
+    } 
+}
+
+@media(min-width: 916px) and (max-width: 1024px){
     .datosContacto {
         margin-top: 2%;
         z-index: -10;
@@ -290,8 +513,18 @@
         display: flex;
     }
 
+    #nombre{
+        width: 100%;
+        margin-left: 5px;
+    }
+
     #telefono{
         width: 97%;
+        margin-left: 5px;
+    }
+
+    #correo{
+        width: 100%;
         margin-left: 5px;
     }
 
@@ -399,6 +632,11 @@
         display: flex;
     }
 
+    #nombre{
+        width: 99%;
+        margin-left: 5px;
+    }
+
     #telefono{
         width: 97%;
         margin-left: 5px;
@@ -418,8 +656,8 @@
         height: 230px;
         max-height: 230px;
         min-height: 230px;
-        max-width: 91%;
-        min-width: 91%;
+        max-width: 90%;
+        min-width: 90%;
         margin-left: 5px;
         resize: none;
     }
@@ -518,14 +756,19 @@
         display: flex;
     }
 
+    #nombre{
+        width: 99%;
+        margin-left: 5px;
+    }
+
     #telefono{
-        width: 98%;
+        width: 97%;
         margin-left: 5px;
     }
 
     #asunto{
         margin-left: 15px;
-        width: 98%;
+        width: 97%;
     }
     
     .containerMje{
@@ -537,8 +780,8 @@
         height: 230px;
         max-height: 230px;
         min-height: 230px;
-        max-width: 91%;
-        min-width: 91%;
+        max-width: 90%;
+        min-width: 90%;
         margin-left: 5px;
         resize: none;
     }

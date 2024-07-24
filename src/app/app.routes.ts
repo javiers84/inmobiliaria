@@ -42,83 +42,83 @@ const routes: Routes = [
         data:{
             role: ['administrador', 'encargado']
           },
-          canActivate: [authGuardGuard, validarTokenGuard, rolesGuard], canLoad: [validarTokenGuard],
+          canActivate: [authGuardGuard, rolesGuard, validarTokenGuard], canLoad: [validarTokenGuard],
         children: [
             { path: 'agregar-administracion', component: AgregarAdministracionComponent, data:{
                 role: ['administrador']
-              }, canActivate: [authGuardGuard, validarTokenGuard], canLoad: [validarTokenGuard]
+              }, canActivate: [authGuardGuard, rolesGuard, validarTokenGuard], canLoad: [validarTokenGuard]
         },
             { path: 'agregar-cartel', component: AgregarCartelComponent, data:{
                 role: ['administrador', 'encargado']
-              }, canActivate: [authGuardGuard, validarTokenGuard], canLoad: [validarTokenGuard]
+              }, canActivate: [authGuardGuard, rolesGuard, validarTokenGuard], canLoad: [validarTokenGuard]
         },
             { path: 'agregar-cliente', component: AgregarClienteComponent, data:{
                 role: ['administrador']
-              }, canActivate: [authGuardGuard, validarTokenGuard], canLoad: [validarTokenGuard]
+              }, canActivate: [authGuardGuard, rolesGuard, validarTokenGuard], canLoad: [validarTokenGuard]
         },
             { path: 'agregar-prop', component: AgregarPropComponent, data:{
                 role: ['administrador', 'encargado']
-            }, canActivate: [authGuardGuard, validarTokenGuard], canLoad: [validarTokenGuard]
+            }, canActivate: [authGuardGuard, rolesGuard, validarTokenGuard], canLoad: [validarTokenGuard]
         },
             { path: 'agregar-slider', component: AgregarSliderComponent, data:{
                 role: ['administrador', 'encargado']
-            }, canActivate: [authGuardGuard, validarTokenGuard], canLoad: [validarTokenGuard]
+            }, canActivate: [authGuardGuard, rolesGuard, validarTokenGuard], canLoad: [validarTokenGuard]
         },
         { path: 'agregar-user', component: AgregarUserComponent, data:{
             role: ['administrador']
-          }, canActivate: [authGuardGuard, validarTokenGuard], canLoad: [validarTokenGuard]
+          }, canActivate: [authGuardGuard, rolesGuard, validarTokenGuard], canLoad: [validarTokenGuard]
     },
             { path: 'listar-administracion', component: ListarAdministracionComponent, data:{
                 role: ['administrador']
-              }, canActivate: [authGuardGuard, validarTokenGuard], canLoad: [validarTokenGuard]
+              }, canActivate: [authGuardGuard, rolesGuard, validarTokenGuard], canLoad: [validarTokenGuard]
         },
             { path: 'listar-cartel', component: ListarCartelesComponent, data:{
                 role: ['administrador', 'encargado']
-              },canActivate: [authGuardGuard, validarTokenGuard], canLoad: [validarTokenGuard]
+              }, canActivate: [authGuardGuard, rolesGuard, validarTokenGuard], canLoad: [validarTokenGuard]
         },
             { path: 'listar-cliente', component: ListarClienteComponent, data:{
                 role: ['administrador']
-              }, canActivate: [authGuardGuard, validarTokenGuard], canLoad: [validarTokenGuard]
+              }, canActivate: [authGuardGuard, rolesGuard, validarTokenGuard], canLoad: [validarTokenGuard]
         },
             { path: 'verMas-cliente/:id', component: VerMasClienteComponent, data:{
                 role: ['administrador']
-              }, canActivate: [authGuardGuard, validarTokenGuard], canLoad: [validarTokenGuard]
+              }, canActivate: [authGuardGuard, rolesGuard, validarTokenGuard], canLoad: [validarTokenGuard]
         },
             { path: 'listar-prop', component: ListarPropComponent, data:{
                 role: ['administrador', 'encargado']
-              }, canActivate: [authGuardGuard, validarTokenGuard], canLoad: [validarTokenGuard]
+              }, canActivate: [authGuardGuard, rolesGuard, validarTokenGuard], canLoad: [validarTokenGuard]
         },
             { path: 'listar-sliders', component: ListarSliderComponent, data:{
                 role: ['administrador', 'encargado']
-              }, canActivate: [authGuardGuard, validarTokenGuard], canLoad: [validarTokenGuard]
+              }, canActivate: [authGuardGuard, rolesGuard, validarTokenGuard], canLoad: [validarTokenGuard]
         },
             { path: 'listar-users', component: ListarUsersComponent, data:{
                 role: ['administrador']
-              }, canActivate: [authGuardGuard, validarTokenGuard], canLoad: [validarTokenGuard]
+              }, canActivate: [authGuardGuard, rolesGuard, validarTokenGuard], canLoad: [validarTokenGuard]
         },
             { path: 'modificar-administracion/:id', component: ModificarAdministracionComponent, data:{
                 role: ['administrador']
-              }, canActivate: [authGuardGuard, validarTokenGuard], canLoad: [validarTokenGuard]
+              }, canActivate: [authGuardGuard, rolesGuard, validarTokenGuard], canLoad: [validarTokenGuard]
         },
             { path: 'modificar-cartel/:id', component: ModificarCartelComponent, data:{
                 role: ['administrador', 'encargado']
-              }, canActivate: [authGuardGuard, validarTokenGuard], canLoad: [validarTokenGuard]
+              }, canActivate: [authGuardGuard, rolesGuard, validarTokenGuard], canLoad: [validarTokenGuard]
         },
             { path: 'modificar-cliente/:id', component: ModificarClienteComponent, data:{
                 role: ['administrador']
-              }, canActivate: [authGuardGuard, validarTokenGuard], canLoad: [validarTokenGuard]
+              }, canActivate: [authGuardGuard, rolesGuard, validarTokenGuard], canLoad: [validarTokenGuard]
         },
             { path: 'modificar-prop/:id', component: ModificarPropComponent, data:{
                 role: ['administrador', 'encargado']
-              }, canActivate: [authGuardGuard, validarTokenGuard], canLoad: [validarTokenGuard]
+              }, canActivate: [authGuardGuard, rolesGuard, validarTokenGuard], canLoad: [validarTokenGuard]
         },
             { path: 'modificar-users/:id', component: ModificarUsersComponent, data:{
                 role: ['administrador']
-              }, canActivate: [authGuardGuard, validarTokenGuard], canLoad: [validarTokenGuard]
+              }, canActivate: [authGuardGuard, rolesGuard, validarTokenGuard], canLoad: [validarTokenGuard]
         },
             { path: 'modificar-slider/:id', component: ModificarSliderComponent, data:{
                 role: ['administrador', 'encargado']
-              }, canActivate: [authGuardGuard, validarTokenGuard], canLoad: [validarTokenGuard]
+              }, canActivate: [authGuardGuard, rolesGuard, validarTokenGuard], canLoad: [validarTokenGuard]
         },
             { path: '**', pathMatch: 'full', redirectTo: 'agregar-prop'}
         ]

@@ -1,4 +1,107 @@
-@media(max-width: 425px){
+@media (max-width: 360px){
+    .footer {
+        background: rgb(180, 180, 180);
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .rowFooter{
+        margin: 0px;
+    }
+
+    #logoFrase{
+        width: 100%;
+    }
+
+    .logo {
+        display: flex;
+        padding-top: 10%;
+        margin: 0px;
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    .fraseContainer {
+        display: flex;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    .frase {
+        color: rgb(120, 120, 120);
+        text-align: center;
+        margin-left: 4%;
+    }
+
+    .contIconosRedes {
+        display: inline;
+        margin-left: 20%;
+        margin-bottom: 10px;
+    }
+    
+    #whatsapp {
+        color: white;
+        transition: transform .2s;
+    }
+    
+    #facebook {
+        color: white;
+        transition: transform .2s;
+    }
+    
+    #instagram {
+        color: white;
+        transition: transform .2s;
+    }
+    
+    #whatsapp:hover {
+        color: rgb(24, 201, 56);
+        transform: scale(1.5);
+    }
+    
+    #facebook:hover {
+        color: rgb(11, 11, 252);
+        transform: scale(1.5);
+    }
+    
+    #instagram:hover {
+        color: rgb(186, 12, 220);
+        transform: scale(1.5);
+    }
+    
+    .info {
+        margin-top: 25px;
+        padding-left: 15%;
+    }
+    
+    .titulo {
+        color: rgb(120, 120, 120);
+        font-size: 35px;
+        margin: 0px;
+    }
+    
+    #textInfo {
+        color: white;
+        margin-top: 5px;
+        font-size: 11px;
+    }
+
+    .ccit{
+        justify-content: center;
+    }
+    
+    .imgCcit {
+        padding-top: 10%;
+    }
+    
+    .matricula {
+        padding-left: 45%;
+        margin-top: -5px;
+    }
+}
+
+@media (min-width: 361px) and (max-width: 424px){
     .footer {
         background: rgb(180, 180, 180);
         display: flex;
@@ -87,6 +190,7 @@
     #textInfo {
         color: white;
         margin-top: 5px;
+        font-size: 18px;
     }
 
     .ccit{
@@ -95,7 +199,7 @@
     
     .imgCcit {
         padding-top: 10%;
-        margin-left: 20%;
+        margin-left: 14%;
     }
     
     .matricula {
@@ -104,7 +208,114 @@
     }
 }
 
-@media(min-width: 426px) and (max-width: 768px){
+@media (min-width: 425px) and (max-width: 540px){
+    .footer {
+        background: rgb(180, 180, 180);
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .rowFooter{
+        margin: 0px;
+    }
+
+    #logoFrase{
+        width: 100%;
+    }
+
+    .logo {
+        display: flex;
+        padding-top: 10%;
+        margin: 0px;
+    }
+    
+    .fraseContainer {
+        display: flex;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    .frase {
+        color: rgb(120, 120, 120);
+        text-align: center;
+        margin-left: 11%;
+    }
+    
+    /* .datosContacto {
+        text-align: center;
+    } */
+
+    .contIconosRedes {
+        display: inline;
+        margin-left: 20%;
+        margin-bottom: 10px;
+    }
+    
+    #whatsapp {
+        color: white;
+        transition: transform .2s;
+    }
+    
+    #facebook {
+        color: white;
+        transition: transform .2s;
+    }
+    
+    #instagram {
+        color: white;
+        transition: transform .2s;
+    }
+    
+    #whatsapp:hover {
+        color: rgb(24, 201, 56);
+        transform: scale(1.5);
+    }
+    
+    #facebook:hover {
+        color: rgb(11, 11, 252);
+        transform: scale(1.5);
+    }
+    
+    #instagram:hover {
+        color: rgb(186, 12, 220);
+        transform: scale(1.5);
+    }
+    
+    .info {
+        margin-top: 25px;
+        padding-left: 15%;
+    }
+    
+    .titulo {
+        color: rgb(120, 120, 120);
+        font-size: 35px;
+        margin: 0px;
+        /* margin-left: 5%; */
+    }
+    
+    #textInfo {
+        color: white;
+        margin-top: 5px;
+        font-size: 18px;
+    }
+
+    .ccit{
+        justify-content: center;
+    }
+    
+    .imgCcit {
+        padding-top: 10%;
+        margin-left: 18%;
+    }
+    
+    .matricula {
+        padding-left: 45%;
+        margin-top: -5px;
+    }
+}
+
+@media(min-width: 541px) and (max-width: 650px){
     .footer {
         background: rgb(180, 180, 180);
         display: flex;
@@ -209,7 +420,7 @@
     }
 }
 
-@media(min-width: 769px) and (max-width: 1024px){
+@media(min-width: 651px) and (max-width: 768px){
     .footer {
         background: rgb(180, 180, 180);
         display: inline-block;
@@ -256,20 +467,21 @@
     
     .logo {
         padding-top: 10%;
-        margin-left: 10%;
+        margin-left: 5%;
+        width: 80%;
         margin-bottom: 10%;
     }
     
     .fraseContainer {
         display: inline-block;
-        margin-left: 5%;
+        /* margin-left: 5%; */
         text-align: center;
         margin-bottom: 5%;
     }
     
     .frase {
         color: rgb(120, 120, 120);
-        margin-left: 20px;
+        /* margin-left: 20px; */
         padding-left: 10px;
     }
     
@@ -280,7 +492,7 @@
     
     .info {
         margin-top: 25px;
-        padding-left: 12%;
+        padding-left: 8%;
     }
     
     .titulo {
@@ -298,13 +510,313 @@
     }
     
     .imgCcit {
-        padding-top: 60%;
-        margin-left: -20px;
+        padding-top: 5%;
+        margin-left: 35%;
     }
     
     .matricula {
-        padding-left: 55%;
-        margin-top: -5px;
+        padding-left: 47%;
+        margin-top: -8px;
+    }
+}
+
+@media(min-width: 769px) and (max-width: 850px){
+    .footer {
+        background: rgb(180, 180, 180);
+        display: inline-block;
+        width: 100%;
+    }
+    
+    .rowFooter{
+        margin: 0px;
+    }
+    
+    .datos-of {
+        text-align: center;
+    }
+    
+    #whatsapp {
+        color: white;
+        transition: transform .2s;
+    }
+    
+    #facebook {
+        color: white;
+        transition: transform .2s;
+    }
+    
+    #instagram {
+        color: white;
+        transition: transform .2s;
+    }
+    
+    #whatsapp:hover {
+        color: rgb(24, 201, 56);
+        transform: scale(1.5);
+    }
+    
+    #facebook:hover {
+        color: rgb(11, 11, 252);
+        transform: scale(1.5);
+    }
+    
+    #instagram:hover {
+        color: rgb(186, 12, 220);
+        transform: scale(1.5);
+    }
+    
+    .logo {
+        padding-top: 10%;
+        margin-left: 5%;
+        width: 80%;
+        margin-bottom: 10%;
+    }
+    
+    .fraseContainer {
+        display: inline-block;
+        /* margin-left: 5%; */
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    
+    .frase {
+        color: rgb(120, 120, 120);
+        /* margin-left: 20px; */
+        padding-left: 10px;
+    }
+    
+    .contIconosRedes {
+        display: inline-block;
+        margin-bottom: 7%;
+    }
+    
+    .info {
+        margin-top: 25px;
+        padding-left: 8%;
+    }
+    
+    .titulo {
+        color: rgb(120, 120, 120);
+        font-size: 35px;
+    }
+    
+    #textInfo {
+        color: white;
+        margin-top: 5px;
+    }
+
+    .ccit{
+        margin: 0px;
+    }
+    
+    .imgCcit {
+        padding-top: 5%;
+        margin-left: 35%;
+    }
+    
+    .matricula {
+        padding-left: 47%;
+        margin-top: -8px;
+    }
+}
+
+@media(min-width: 851px) and (max-width: 950px){
+    .footer {
+        background: rgb(180, 180, 180);
+        display: inline-block;
+        width: 100%;
+    }
+    
+    .rowFooter{
+        margin: 0px;
+    }
+    
+    .datos-of {
+        text-align: center;
+    }
+    
+    #whatsapp {
+        color: white;
+        transition: transform .2s;
+    }
+    
+    #facebook {
+        color: white;
+        transition: transform .2s;
+    }
+    
+    #instagram {
+        color: white;
+        transition: transform .2s;
+    }
+    
+    #whatsapp:hover {
+        color: rgb(24, 201, 56);
+        transform: scale(1.5);
+    }
+    
+    #facebook:hover {
+        color: rgb(11, 11, 252);
+        transform: scale(1.5);
+    }
+    
+    #instagram:hover {
+        color: rgb(186, 12, 220);
+        transform: scale(1.5);
+    }
+    
+    .logo {
+        padding-top: 10%;
+        margin-left: 5%;
+        width: 80%;
+        margin-bottom: 10%;
+    }
+    
+    .fraseContainer {
+        display: inline-block;
+        /* margin-left: 5%; */
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    
+    .frase {
+        color: rgb(120, 120, 120);
+        /* margin-left: 20px; */
+        padding-left: 10px;
+    }
+    
+    .contIconosRedes {
+        display: inline-block;
+        margin-bottom: 7%;
+    }
+    
+    .info {
+        margin-top: 25px;
+        padding-left: 8%;
+    }
+    
+    .titulo {
+        color: rgb(120, 120, 120);
+        font-size: 35px;
+    }
+    
+    #textInfo {
+        color: white;
+        margin-top: 5px;
+    }
+
+    .ccit{
+        margin: 0px;
+    }
+    
+    .imgCcit {
+        padding-top: 5%;
+        margin-left: 35%;
+    }
+    
+    .matricula {
+        padding-left: 47%;
+        margin-top: -8px;
+    }
+}
+
+@media(min-width: 951px) and (max-width: 1024px){
+    .footer {
+        background: rgb(180, 180, 180);
+        display: inline-block;
+        width: 100%;
+    }
+    
+    .rowFooter{
+        margin: 0px;
+    }
+    
+    .datos-of {
+        text-align: center;
+    }
+    
+    #whatsapp {
+        color: white;
+        transition: transform .2s;
+    }
+    
+    #facebook {
+        color: white;
+        transition: transform .2s;
+    }
+    
+    #instagram {
+        color: white;
+        transition: transform .2s;
+    }
+    
+    #whatsapp:hover {
+        color: rgb(24, 201, 56);
+        transform: scale(1.5);
+    }
+    
+    #facebook:hover {
+        color: rgb(11, 11, 252);
+        transform: scale(1.5);
+    }
+    
+    #instagram:hover {
+        color: rgb(186, 12, 220);
+        transform: scale(1.5);
+    }
+    
+    .logo {
+        padding-top: 10%;
+        margin-left: 5%;
+        width: 80%;
+        margin-bottom: 10%;
+    }
+    
+    .fraseContainer {
+        display: inline-block;
+        /* margin-left: 5%; */
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    
+    .frase {
+        color: rgb(120, 120, 120);
+        /* margin-left: 20px; */
+        padding-left: 10px;
+    }
+    
+    .contIconosRedes {
+        display: inline-block;
+        margin-bottom: 7%;
+    }
+    
+    .info {
+        margin-top: 25px;
+        padding-left: 8%;
+    }
+    
+    .titulo {
+        color: rgb(120, 120, 120);
+        font-size: 35px;
+    }
+    
+    #textInfo {
+        color: white;
+        margin-top: 5px;
+    }
+
+    .ccit{
+        margin: 0px;
+    }
+    
+    .imgCcit {
+        padding-top: 70%;
+        margin-left: -5%;
+    }
+    
+    .matricula {
+        padding-left: 47%;
+        margin-top: -8px;
     }
 }
 
@@ -394,7 +906,7 @@
     }
 
     .imgCcit {
-        padding-top: 50%;
+        padding-top: 60%;
         width: auto;
     }
 
@@ -490,12 +1002,12 @@
 
     #textInfo {
         color: white;
-        margin-top: 5px;
+        margin-top: 15px;
         font-size: 35px;
     }
 
     .imgCcit {
-        padding-top: 49%;
+        padding-top: 57%;
         width:70%;
         height: auto;
     }

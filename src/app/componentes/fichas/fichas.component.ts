@@ -69,7 +69,6 @@ export class FichasComponent implements OnInit {
     }
 
     obtenerPropiedad(identificador: any) {
-      // identificador = localStorage.getItem('idPropExportar');
       identificador = this.activedRoute.snapshot.paramMap.get('id');
       this.inmueblesService.obtenerPropiedad(identificador).subscribe(resultado => {
         this.propiedades = resultado.propiedad;
@@ -137,8 +136,6 @@ export class FichasComponent implements OnInit {
           document.getElementById('cloacas')!.setAttribute("style", "display: none");
         }
   
-        console.log('propiedad que retorna: ', this.propiedades);
-  
         this.zona = resultado.propiedad.zona;
         this.codigo = resultado.propiedad.codigo;
         this.domicilio = resultado.propiedad.domicilio;
@@ -164,23 +161,19 @@ export class FichasComponent implements OnInit {
         this.seguridad = this.seguridad;
         this.porteria = this.porteria;
         this.cloacas = this.cloacas;
-        this.imagenUno = 'http://localhost:3000/'+resultado.propiedad.imagen1;
-        this.imagenDos = 'http://localhost:3000/'+resultado.propiedad.imagen2;
-        this.imagenTres = 'http://localhost:3000/'+resultado.propiedad.imagen3;
-        this.imagenCuatro = 'http://localhost:3000/'+resultado.propiedad.imagen4;
-        this.imagenCinco = 'http://localhost:3000/'+resultado.propiedad.imagen5;
+        this.imagenUno = 'https://marinoinmobiliaria.onrender.com/'+resultado.propiedad.imagen1;
+        this.imagenDos = 'https://marinoinmobiliaria.onrender.com/'+resultado.propiedad.imagen2;
+        this.imagenTres = 'https://marinoinmobiliaria.onrender.com/'+resultado.propiedad.imagen3;
+        this.imagenCuatro = 'https://marinoinmobiliaria.onrender.com/'+resultado.propiedad.imagen4;
+        this.imagenCinco = 'https://marinoinmobiliaria.onrender.com/'+resultado.propiedad.imagen5;
       });
     }
 
     obtenerAgente(id: any){
-      id = this.activedRoute.snapshot.paramMap.get('idAgente')
-      // id = localStorage.getItem('id');
-      console.log('id del parametro ', id);
+      id = this.activedRoute.snapshot.paramMap.get('idAgente');
       this.usuarioService.obtenerUsuario(id).subscribe(resultado => {
 
-        console.log('datos del usuario: ', resultado.usuario);
-
-        this.foto = 'http://localhost:3000/'+resultado.usuario.imagen;
+        this.foto = 'https://marinoinmobiliaria.onrender.com/'+resultado.usuario.imagen;
         this.nombre = resultado.usuario.nombre;
         this.telefono = resultado.usuario.telefono;
         this.mail = resultado.usuario.mail;
@@ -188,7 +181,6 @@ export class FichasComponent implements OnInit {
     }
 
     exportarPropiedad(){
-      console.log('pasamos por exportar ficha');
 
       var elemento = document.getElementById('btnExpor');
       elemento!.style.display = "none";
@@ -196,19 +188,14 @@ export class FichasComponent implements OnInit {
       // Extraemos el
       const DATA = document.getElementById('leerPDF');
       const doc = new jsPDF('p', 'px', 'a4');
-      const options = {
-      background: 'white',
-      scale: 3
-    };
 
-    html2canvas(DATA!, options).then((canvas: any) => {
+      html2canvas(DATA!).then((canvas: any) => {
 
       var img1 = canvas.toDataURL(this.imagenUno);
       var img2 = canvas.toDataURL(this.imagenDos+'/jpeg');
       var img3 = canvas.toDataURL(this.imagenTres+'/jpeg');
       var img4 = canvas.toDataURL(this.imagenCuatro+'/jpeg');
       var img5 = canvas.toDataURL(this.imagenCinco+'/jpeg');
-
       var imgAgente = canvas.toDataURL(this.foto);
 
     //   // Add image Canvas to PDF
@@ -221,11 +208,6 @@ export class FichasComponent implements OnInit {
       const imgProps5 = (doc as any).getImageProperties(img5);
       const imgPropAgente = (doc as any).getImageProperties(imgAgente);
 
-      // const reader = new FileReader();
-      // reader.onloadend = () => {
-      //   const img1Base64 = reader.result as string;
-      // }
-
       const pdfWidth = doc.internal.pageSize.getWidth() - 2 * bufferX;
 
       const pdfHeight1 = (imgProps1.height * pdfWidth) / imgProps1.width;
@@ -233,7 +215,6 @@ export class FichasComponent implements OnInit {
       const pdfHeight3 = (imgProps3.height * pdfWidth) / imgProps3.width;
       const pdfHeight4 = (imgProps4.height * pdfWidth) / imgProps4.width;
       const pdfHeight5 = (imgProps5.height * pdfWidth) / imgProps5.width;
-      const pdfHeightAgente = (imgPropAgente.height * pdfWidth) / imgAgente.width;
 
       doc.addImage(img1, 'JPEG', bufferX, bufferY, pdfWidth, pdfHeight1, undefined, 'FAST');
       doc.addImage(img2, 'JPEG', bufferX, bufferY, pdfWidth, pdfHeight2, undefined, 'FAST');
@@ -243,7 +224,6 @@ export class FichasComponent implements OnInit {
       doc.addImage(imgAgente, 'PNG', bufferX, bufferY, 35, 35, undefined, 'FAST');
       return doc;
     }).then((docResult: any) => {
-      console.log('imagen uno de la ficha:'+this.imagenUno);
       // docResult.save(`${new Date().toISOString()}_propiedad:${this.domicilio}.pdf`);
       docResult.save(`propiedad:${this.domicilio}.pdf`);
     });
@@ -254,7 +234,6 @@ export class FichasComponent implements OnInit {
 
     copiar(){
       var url = window.location.href;
-      console.log('url actual ' + url);
       this.clipboard.copy(url);
     }
 

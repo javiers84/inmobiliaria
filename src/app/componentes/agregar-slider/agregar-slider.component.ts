@@ -21,26 +21,20 @@ export class AgregarSliderComponent implements OnInit {
   }
 
   onFileChange(event: any) {
-    console.log('evento cargar imagen');
     let reader = new FileReader();
     if (event.target.files && event.target.files.length > 0) {
       let file = event.target.files[0];
       reader.readAsDataURL(file);
       reader.onload = () => {
         this.imagen = (<string>reader.result).split(',')[1];
-        console.log('nombre imagen: ' + file.name);
-        console.log('tipo imagen: ' + file.type);
-        console.log('imagen en base64: ' + (<string>reader.result).split(',')[1]);
         this.imagenSeleccionada = (<string>reader.result).split(',')[1];
       }
     }
   }
 
   clearFile() {
-    console.log('pasamos por evento eliminar imagen');
 
     this.imagenSeleccionada = "";
-
   }
 
   guardarSlider() {

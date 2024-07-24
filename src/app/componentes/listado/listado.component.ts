@@ -20,8 +20,6 @@ export class ListadoComponent implements OnInit {
   }
 
   eliminarPropiedades(identificador: any) {
-    console.log('evento eliminar propiedades');
-    console.log(identificador);
 
     this.inmueblesService.eliminarPropiedad(identificador).subscribe(resultado => {
       this.obtenerPropiedades();
@@ -29,7 +27,6 @@ export class ListadoComponent implements OnInit {
   }
 
   modificarPropiedades(identificador: any) {
-    console.log('evento modificar propiedad', identificador);
   }
 
   ngOnInit() {

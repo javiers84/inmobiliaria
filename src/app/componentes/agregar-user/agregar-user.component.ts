@@ -30,7 +30,6 @@ export class AgregarUserComponent implements OnInit {
    }
 
    onFileChange(event: any) {
-    console.log('evento cargar imagen');
     let reader = new FileReader();
     if (event.target.files && event.target.files.length > 0) {
       let file = event.target.files[0];
@@ -46,10 +45,8 @@ export class AgregarUserComponent implements OnInit {
   }
 
   clearFile() {
-    console.log('evento eliminar imagen');
 
     this.imagenSeleccionada = "";
-
   }
 
   agregarUsuario(){
@@ -63,7 +60,6 @@ export class AgregarUserComponent implements OnInit {
       role: this.idRole
     }
     this.usuarioServices.agregarUsuario(usuario).subscribe(resultado => {
-      console.log('usuario agregado con exito: ' + resultado.usuario);
       alert("usuario agregado exitosamente");
     });
 
@@ -79,7 +75,6 @@ export class AgregarUserComponent implements OnInit {
 
   filtrarPorRole(){
     this.roleService.obtenerRoles().subscribe(resultado => {
-      console.log('resultado roles: ', resultado);
       this.roles = resultado.roles;
     });
   }

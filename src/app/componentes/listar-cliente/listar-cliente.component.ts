@@ -26,13 +26,11 @@ export class ListarClienteComponent implements OnInit {
   }
 
   modificarCliente(idCliente: any){
-    console.log('pasamos por modificar cliente');
 
     localStorage.setItem('idCliente', idCliente);
   }
 
   eliminarCliente(idCliente: any){
-    console.log('pasamos por eliminar cliente');
     this.clientesService.eliminarCliente(idCliente).subscribe(resultado => {
       this.obtenerClientes();
     });
@@ -41,7 +39,6 @@ export class ListarClienteComponent implements OnInit {
   }
 
   verMas(idCliente: any){
-    console.log('pasamos por ver mas info de cliente: ', idCliente);
 
     localStorage.setItem('idCliente', idCliente);
   }

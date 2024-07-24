@@ -2,11 +2,15 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { Routes, RouterModule} from '@angular/router';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { APP_ROUTING } from './app.routes';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 import { AgregarAdministracionComponent } from './componentes/agregar-administracion/agregar-administracion.component';
 import { AgregarCartelComponent } from './componentes/agregar-cartel/agregar-cartel.component';
@@ -50,6 +54,8 @@ import { ClientesService } from './servicios/clientes.service';
 import { RolesService } from './servicios/roles.service';
 import { SlidersService } from './servicios/sliders.service';
 import { UsuariosService } from './servicios/usuarios.service';
+import { DialogConfirmComponent } from './componentes/dialog-confirm/dialog-confirm.component';
+import { AuthInterceptorService } from './servicios/auth-interceptor.service';
 
 @NgModule({
   declarations: [
@@ -85,16 +91,27 @@ import { UsuariosService } from './servicios/usuarios.service';
     PropiedadesComponent,
     ServiciosempComponent,
     VerMasClienteComponent,
-    SafePipe
+    SafePipe,
+    DialogConfirmComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
     AppRoutingModule,
-    APP_ROUTING
+    APP_ROUTING,
+    MatDialogModule,
+    BrowserAnimationsModule,
+    NgxPaginationModule
   ],
-  providers: [authGuardGuard, validarTokenGuard, rolesGuard, InmueblesService, AdministracionService, CartelesService, ClientesService, SlidersService, UsuariosService, RolesService, {provide: String, useValue:""}],
+  providers: [authGuardGuard, validarTokenGuard, rolesGuard, InmueblesService, AdministracionService, 
+    CartelesService, ClientesService, SlidersService, UsuariosService, RolesService, {provide: String, useValue:""},
+  {
+    provide: HTTP_INTERCEPTORS,
+    useClass: AuthInterceptorService,
+    multi: true
+  }
+],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

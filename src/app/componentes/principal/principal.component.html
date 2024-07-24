@@ -1,10 +1,20 @@
 <!-- SLIDER -->
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner" >
-        <div class="carousel-item" *ngFor="let item of sliders; first as primero" [class.active]="primero">
-            <img src="http://localhost:3000/{{item.imagen}}" class="d-block w-100 imgSlider" alt="...">
+        <div class="carousel-item" *ngFor="let item of sliders; first as primero" [class.active]="primero" data-bs-interval="5000">
+            <img src="https://www.marinoinmobiliaria.com.ar/{{item.imagen}}" class="d-block w-100 imgSlider" alt="...">
         </div>
     </div>
+    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button> -->
 </div>
 
 
@@ -18,7 +28,7 @@
     <div class="row tarjetaProp container">
         <div class="col-xxl-4 col-lg-4 col-xs-12 col-md-4 contendorCards" *ngFor="let prop of propiedades">
             <div class="card">
-                <img src="http://localhost:3000/{{prop.imagen1}}" class="card-img-top" alt="...">
+                <img src="https://www.marinoinmobiliaria.com.ar/{{prop.imagen1}}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p id="codCard">cod. {{prop.zona}} {{prop.codigo}}</p>
                     <h5 class="card-title">{{prop.tipoUnidad}} | {{prop.tipoOperacion}}</h5>

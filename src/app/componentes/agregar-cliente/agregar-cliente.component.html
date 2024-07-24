@@ -45,7 +45,7 @@
           <br>
           <select class="selectaltura" [(ngModel)]="idPropiedad" name="idPropiedad" id="propiedad">
               <option>select...</option>
-              <option >Ninguna</option>
+              <option>Ninguna</option>
               <option *ngFor="let propiedad of propiedades" [value]="propiedad._id">{{ propiedad.domicilio }}</option>
           </select>
         </div>

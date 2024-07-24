@@ -41,11 +41,7 @@ export class AgregarPropComponent implements OnInit {
   seguridad: any;
   porteria: any;
   cloacas: any;
-  // imagen1: any;
-  // imagen2: any;
-  // imagen3: any;
-  // imagen4: any;
-  // imagen5: any;
+  mostrar: boolean = true;
 
   imagenUno: any;
   imagenSeleccionadaUno: any;
@@ -69,13 +65,11 @@ export class AgregarPropComponent implements OnInit {
 checkOnoCheck(){
   const input = document.getElementById("inputBPoC") as HTMLInputElement;
   if(input.checked){
-    console.log('esta tildado: ' + input.checked);
     const inputMza = document.getElementById("manzana") as HTMLInputElement;
     inputMza.disabled = false;
     const inputLote = document.getElementById("lote") as HTMLInputElement;
     inputLote.disabled = false;
   }else{
-    console.log('esta tildado: ' + input.checked);
     const inputMza = document.getElementById("manzana") as HTMLInputElement;
     inputMza.disabled = true;
     const inputLote = document.getElementById("lote") as HTMLInputElement;
@@ -84,7 +78,6 @@ checkOnoCheck(){
 }
 
   onFileChange1(event: any) {
-    console.log('evento cargar imagen');
     let reader = new FileReader();
     if (event.target.files && event.target.files.length > 0) {
       let file = event.target.files[0];
@@ -100,20 +93,17 @@ checkOnoCheck(){
   }
 
   clearFile1() {
-    console.log('evento eliminar imagen');
 
     this.imagenSeleccionadaUno = "";
 
   }
 
   onFileChange2(event: any) {
-    console.log('evento cargar imagen');
     let reader = new FileReader();
     if (event.target.files && event.target.files.length > 0) {
       let file = event.target.files[0];
       reader.readAsDataURL(file);
       reader.onload = () => {
-        // let imagen2 = this.imagenDos.sanitizer.bypassSecurityTrustUrl(event);
         this.imagenDos = (<string>reader.result).split(',')[1];
         console.log(file.name);
         console.log(file.type);
@@ -124,14 +114,12 @@ checkOnoCheck(){
   }
 
   clearFile2() {
-    console.log('evento eliminar imagen');
 
     this.imagenSeleccionadaDos = "";
 
   }
 
   onFileChange3(event: any) {
-    console.log('evento cargar imagen');
     let reader = new FileReader();
     if (event.target.files && event.target.files.length > 0) {
       let file = event.target.files[0];
@@ -147,14 +135,12 @@ checkOnoCheck(){
   }
 
   clearFile3() {
-    console.log('evento eliminar imagen');
 
     this.imagenSeleccionadaTres = "";
 
   }
 
   onFileChange4(event: any) {
-    console.log('evento cargar imagen');
     let reader = new FileReader();
     if (event.target.files && event.target.files.length > 0) {
       let file = event.target.files[0];
@@ -170,14 +156,12 @@ checkOnoCheck(){
   }
 
   clearFile4() {
-    console.log('evento eliminar imagen');
 
     this.imagenSeleccionadaCuatro = "";
 
   }
 
   onFileChange5(event: any) {
-    console.log('evento cargar imagen');
     let reader = new FileReader();
     if (event.target.files && event.target.files.length > 0) {
       let file = event.target.files[0];
@@ -193,7 +177,6 @@ checkOnoCheck(){
   }
 
   clearFile5() {
-    console.log('evento eliminar imagen');
 
     this.imagenSeleccionadaCinco = "";
 
@@ -201,7 +184,6 @@ checkOnoCheck(){
 
   ultimoDatoJson(){
     this.inmueblesService.obtenerPropiedades().subscribe(resultado => {
-      // this.codigo1 = resultado.propiedades;
       var datos = resultado.propiedades;
 
       var as = <number> datos[datos.length-1].codigo;
@@ -209,16 +191,11 @@ checkOnoCheck(){
 
       var b = as.toString().padStart(5, '0');
 
-      console.log('valor de la suma de as: ', as.toString().padStart(5, '0'));
-
       this.ultimoIdProp = b;
-
-      console.log('nuevo codigo: ' + this.ultimoIdProp);
     });
   }
 
   agregarPropiedad() {
-    console.log('evento agregar propiedad');
 
     var propiedad: any = {
       zona: this.zona,
@@ -249,6 +226,7 @@ checkOnoCheck(){
       seguridad: this.seguridad,
       porteria: this.porteria,
       cloacas: this.cloacas,
+      mostrar: this.mostrar,
       imagen1: this.imagenUno,
       imagen2: this.imagenDos,
       imagen3: this.imagenTres,
@@ -296,6 +274,10 @@ checkOnoCheck(){
 
     this.router.navigate(['/dashboard/listar-prop'])
   }
+
+  onSubmit(f: any) {
+    console.log(f.value);
+}
 
   filtrarPorPropietario(){
     this.clienteService.obtenerClientes().subscribe(resultado => {

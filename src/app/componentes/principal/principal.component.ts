@@ -40,7 +40,6 @@ export class PrincipalComponent implements OnInit{
 
       for (var key = inicio; key < this.as1.length; key++) {
         this.propiedad = this.as1[key];
-        console.log('ultimas propiedades con i=' + key + " " + JSON.stringify(this.propiedad));
         var as: Array<any> = [];
         this.propiedades = this.propiedades.concat(this.propiedad);
       }

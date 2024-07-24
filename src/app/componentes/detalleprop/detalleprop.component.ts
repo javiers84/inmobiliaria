@@ -8,7 +8,6 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrl: './detalleprop.component.css'
 })
 export class DetallepropComponent implements OnInit {
-  // public safeSrc!: SafeResourceUrl;
 
   propiedades: any;
 
@@ -50,7 +49,6 @@ export class DetallepropComponent implements OnInit {
 
   constructor(private inmueblesService: InmueblesService, private id: String,
               private domSanitizer: DomSanitizer) {
-    console.log('el id que llega al constructor es: ' + this.id);
     this.obtenerPropiedad(this.id);
   }
 
@@ -121,8 +119,6 @@ export class DetallepropComponent implements OnInit {
       }else{
         document.getElementById('cloacas')!.setAttribute("style", "display: none");
       }
-
-      console.log('propiedad que retorna: ', this.propiedades);
 
       this.zona = resultado.propiedad.zona;
       this.codigo = resultado.propiedad.codigo;

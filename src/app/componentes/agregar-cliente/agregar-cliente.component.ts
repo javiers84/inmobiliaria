@@ -31,7 +31,6 @@ export class AgregarClienteComponent implements OnInit {
   obtenerPropiedades(){
     this.inmueblesServices.obtenerPropiedades().subscribe(resultado => {
       this.propiedades = resultado.propiedades;
-      console.log('nombre de propiedades: ' + this.propiedades);
     });
   }
 
@@ -47,7 +46,6 @@ export class AgregarClienteComponent implements OnInit {
       idPropiedad : this.idPropiedad
     }
     this.clienteService.agregarCliente(cliente).subscribe(resultado => {
-      console.log('cliente agregado con exito: ' + resultado.cliente);
     });
 
   }

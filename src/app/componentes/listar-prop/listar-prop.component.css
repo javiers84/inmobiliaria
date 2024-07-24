@@ -1,74 +1,470 @@
-.tabla {
-    width: 100%;
+@media(max-width: 325px){
+    #contenedorTabla{
+        display: flex;
+    }
+
+    .listado{
+        width: 325px;
+    }
+
+    .tabla {
+        width: 100%;
+    }
+    
+    .titulo {
+        margin-top: 15px;
+        margin-bottom: 25px;
+        text-align: center;
+        color: black;
+    }
+    
+    .itemTitulo {
+        display: none;
+        font-weight: bold;
+        color: black;
+        text-align: center;
+    }
+    
+    #datosTabla{
+        margin-top: 25px;
+    }
+    
+    .item {
+        display: none;
+        color: black;
+        text-align: center;
+        font-size: 8px;
+    }
+    
+    .itemImg {
+        text-align: center;
+        width: 70px;
+        height: 70px;
+    }
+    
+    .itemBtn {
+        display: flex;
+        padding-top: 20px;
+    }
+    
+    #imagen {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .btnEliminar {
+        color: red;
+    }
+    
+    .btnModificar {
+        color: blue;
+    }
+    
+    .btnExportar {
+        color: gray;
+        margin-top: -40px;
+    }
+    
+    .opcionesExport{
+        margin-right: 100px; 
+        z-index: 100;
+        border: none;
+        background: #adb5bd;
+        margin-right: 20px;
+    }
+    
+    p {
+        visibility: hidden;
+    }
+    
+    a:hover p {
+        visibility: visible;
+    }
 }
 
-.titulo {
-    margin-top: 15px;
-    margin-bottom: 25px;
-    text-align: center;
-    color: black;
+@media (min-width: 326px) and (max-width: 425px){
+    .tabla {
+        width: 100%;
+    }
+    
+    .titulo {
+        margin-top: 15px;
+        margin-bottom: 25px;
+        text-align: center;
+        color: black;
+    }
+    
+    .itemTitulo {
+        font-weight: bold;
+        color: black;
+        text-align: center;
+    }
+    
+    #datosTabla{
+        margin-top: 25px;
+    }
+    
+    .item {
+        color: black;
+        text-align: center;
+    }
+    
+    .itemImg {
+        text-align: center;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .itemBtn {
+        display: flex;
+        padding-top: 20px;
+    }
+    
+    #imagen {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .btnEliminar {
+        color: red;
+    }
+    
+    .btnModificar {
+        color: blue;
+    }
+    
+    .btnExportar {
+        color: gray;
+        margin-top: -40px;
+    }
+    
+    /* .btnExport{
+        position: absolute;
+    } */
+    
+    .opcionesExport{
+        /* position: absolute;  */
+        margin-right: 100px; 
+        z-index: 100;
+        border: none;
+        background: #adb5bd;
+        margin-right: 20px;
+    }
+    
+    p {
+        visibility: hidden;
+    }
+    
+    a:hover p {
+        visibility: visible;
+    }
 }
 
-.itemTitulo {
-    font-weight: bold;
-    color: black;
-    text-align: center;
+@media (min-width: 426px) and (max-width: 768px){
+    .tabla {
+        width: 100%;
+    }
+    
+    .titulo {
+        margin-top: 15px;
+        margin-bottom: 25px;
+        text-align: center;
+        color: black;
+    }
+    
+    .itemTitulo {
+        font-weight: bold;
+        color: black;
+        text-align: center;
+    }
+    
+    #datosTabla{
+        margin-top: 25px;
+    }
+    
+    .item {
+        color: black;
+        text-align: center;
+    }
+    
+    .itemImg {
+        text-align: center;
+        width: 70px;
+        height: 70px;
+    }
+    
+    .itemBtn {
+        padding-top: 20px;
+    }
+    
+    #imagen {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .btnEliminar {
+        color: red;
+    }
+    
+    .btnModificar {
+        color: blue;
+    }
+    
+    .btnExportar {
+        color: gray;
+        margin-top: -40px;
+    }
+    
+    /* .btnExport{
+        position: absolute;
+    } */
+    
+    .opcionesExport{
+        /* position: absolute;  */
+        margin-right: 100px; 
+        z-index: 100;
+        border: none;
+        background: #adb5bd;
+        margin-right: 20px;
+    }
+    
+    p {
+        visibility: hidden;
+    }
+    
+    a:hover p {
+        visibility: visible;
+    }
 }
 
-#datosTabla{
-    margin-top: 25px;
+@media(min-width: 769px) and (max-width: 1024px){
+    .tabla {
+        width: 100%;
+    }
+    
+    .titulo {
+        margin-top: 15px;
+        margin-bottom: 25px;
+        text-align: center;
+        color: black;
+    }
+    
+    .itemTitulo {
+        font-weight: bold;
+        color: black;
+        text-align: center;
+    }
+    
+    #datosTabla{
+        margin-top: 25px;
+    }
+    
+    .item {
+        color: black;
+        text-align: center;
+    }
+    
+    .itemImg {
+        text-align: center;
+        width: 70px;
+        height: 70px;
+    }
+    
+    .itemBtn {
+        padding-top: 20px;
+    }
+    
+    #imagen {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .btnEliminar {
+        color: red;
+    }
+    
+    .btnModificar {
+        color: blue;
+    }
+    
+    .btnExportar {
+        color: gray;
+        margin-top: -40px;
+    }
+    
+    /* .btnExport{
+        position: absolute;
+    } */
+    
+    .opcionesExport{
+        /* position: absolute;  */
+        margin-right: 100px; 
+        z-index: 100;
+        border: none;
+        background: #adb5bd;
+        margin-right: 20px;
+    }
+    
+    p {
+        visibility: hidden;
+    }
+    
+    a:hover p {
+        visibility: visible;
+    }
 }
 
-.item {
-    color: black;
-    text-align: center;
+@media(min-width: 1025px) and (max-width: 1440px){
+    .tabla {
+        width: 100%;
+    }
+    
+    .titulo {
+        margin-top: 15px;
+        margin-bottom: 25px;
+        text-align: center;
+        color: black;
+    }
+    
+    .itemTitulo {
+        font-weight: bold;
+        color: black;
+        text-align: center;
+    }
+    
+    #datosTabla{
+        margin-top: 25px;
+    }
+    
+    .item {
+        color: black;
+        text-align: center;
+    }
+    
+    .itemImg {
+        text-align: center;
+        width: 70px;
+        height: 70px;
+    }
+    
+    .itemBtn {
+        padding-top: 20px;
+    }
+    
+    #imagen {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .btnEliminar {
+        color: red;
+    }
+    
+    .btnModificar {
+        color: blue;
+    }
+    
+    .btnExportar {
+        color: gray;
+        margin-top: -40px;
+    }
+    
+    /* .btnExport{
+        position: absolute;
+    } */
+    
+    .opcionesExport{
+        /* position: absolute;  */
+        margin-right: 100px; 
+        z-index: 100;
+        border: none;
+        background: #adb5bd;
+        margin-right: 20px;
+    }
+    
+    p {
+        visibility: hidden;
+    }
+    
+    a:hover p {
+        visibility: visible;
+    }
 }
 
-.itemImg {
-    text-align: center;
-    width: 70px;
-    height: 70px;
+@media(min-width: 1441px) and (max-width: 2560px){
+    .tabla {
+        width: 100%;
+    }
+    
+    .titulo {
+        margin-top: 15px;
+        margin-bottom: 25px;
+        text-align: center;
+        color: black;
+    }
+    
+    .itemTitulo {
+        font-weight: bold;
+        color: black;
+        text-align: center;
+    }
+    
+    #datosTabla{
+        margin-top: 25px;
+    }
+    
+    .item {
+        color: black;
+        text-align: center;
+    }
+    
+    .itemImg {
+        text-align: center;
+        width: 70px;
+        height: 70px;
+    }
+    
+    .itemBtn {
+        padding-top: 20px;
+    }
+    
+    #imagen {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .btnEliminar {
+        color: red;
+    }
+    
+    .btnModificar {
+        color: blue;
+    }
+    
+    .btnExportar {
+        color: gray;
+        margin-top: -40px;
+    }
+    
+    /* .btnExport{
+        position: absolute;
+    } */
+    
+    .opcionesExport{
+        /* position: absolute;  */
+        margin-right: 100px; 
+        z-index: 100;
+        border: none;
+        background: #adb5bd;
+        margin-right: 20px;
+    }
+    
+    p {
+        visibility: hidden;
+    }
+    
+    a:hover p {
+        visibility: visible;
+    }
 }
 
-.itemBtn {
-    padding-top: 20px;
-}
-
-#imagen {
-    width: 70px;
-    height: 70px;
-}
-
-.btnEliminar {
-    color: red;
-}
-
-.btnModificar {
-    color: blue;
-}
-
-.btnExportar {
-    color: gray;
-    margin-top: -40px;
-}
-
-/* .btnExport{
-    position: absolute;
-} */
-
-.opcionesExport{
-    /* position: absolute;  */
-    margin-right: 100px; 
-    z-index: 100;
-    border: none;
-    background: #adb5bd;
-    margin-right: 20px;
-}
-
-p {
-    visibility: hidden;
-}
-
-a:hover p {
-    visibility: visible;
-}

@@ -13,7 +13,6 @@ export class ModificarPropComponent implements OnInit{
   propiedades: any;
   identificador: any;
   propietarios: any;
-  nombreCliente: any;
 
   zona: any;
   codigo: any;
@@ -53,16 +52,32 @@ export class ModificarPropComponent implements OnInit{
   imagenCinco: any;
   imagenSeleccionadaCinco: any;
 
-  constructor(private router: Router,
-              private activatedRoute: ActivatedRoute,
-              private inmuebleService: InmueblesService,
-              private clienteService: ClientesService) { 
-                this.filtrarPorPropietario();
-                this.obtenerPropiedad();
-              }
+  constructor(
+    private inmuebleService: InmueblesService,
+    private clienteService: ClientesService, 
+    private router: Router,
+    private activatedRoute: ActivatedRoute
+    ) { 
+        this.filtrarPorPropietario();
+        this.obtenerPropiedad();
+      }
+
+checkOnoCheck(){
+  const input = document.getElementById("inputBPoC") as HTMLInputElement;
+  if(input.checked){
+    const inputMza = document.getElementById("manzana") as HTMLInputElement;
+    inputMza.disabled = false;
+    const inputLote = document.getElementById("lote") as HTMLInputElement;
+    inputLote.disabled = false;
+  }else{
+    const inputMza = document.getElementById("manzana") as HTMLInputElement;
+    inputMza.disabled = true;
+    const inputLote = document.getElementById("lote") as HTMLInputElement;
+    inputLote.disabled = true;
+  }
+}
 
   onFileChange1(event: any) {
-    console.log('evento cargar imagen');
     let reader = new FileReader();
     if (event.target.files && event.target.files.length > 0) {
       let file = event.target.files[0];
@@ -78,14 +93,11 @@ export class ModificarPropComponent implements OnInit{
   }
 
   clearFile1() {
-    console.log('evento eliminar imagen');
-
     this.imagenSeleccionadaUno = "";
 
   }
 
   onFileChange2(event: any) {
-    console.log('evento cargar imagen');
     let reader = new FileReader();
     if (event.target.files && event.target.files.length > 0) {
       let file = event.target.files[0];
@@ -101,14 +113,11 @@ export class ModificarPropComponent implements OnInit{
   }
 
   clearFile2() {
-    console.log('evento eliminar imagen');
-
     this.imagenSeleccionadaDos = "";
 
   }
 
   onFileChange3(event: any) {
-    console.log('evento cargar imagen');
     let reader = new FileReader();
     if (event.target.files && event.target.files.length > 0) {
       let file = event.target.files[0];
@@ -124,14 +133,11 @@ export class ModificarPropComponent implements OnInit{
   }
 
   clearFile3() {
-    console.log('evento eliminar imagen');
-
     this.imagenSeleccionadaTres = "";
 
   }
 
   onFileChange4(event: any) {
-    console.log('evento cargar imagen');
     let reader = new FileReader();
     if (event.target.files && event.target.files.length > 0) {
       let file = event.target.files[0];
@@ -147,14 +153,11 @@ export class ModificarPropComponent implements OnInit{
   }
 
   clearFile4() {
-    console.log('evento eliminar imagen');
-
     this.imagenSeleccionadaCuatro = "";
 
   }
 
   onFileChange5(event: any) {
-    console.log('evento cargar imagen');
     let reader = new FileReader();
     if (event.target.files && event.target.files.length > 0) {
       let file = event.target.files[0];
@@ -170,15 +173,12 @@ export class ModificarPropComponent implements OnInit{
   }
 
   clearFile5() {
-    console.log('evento eliminar imagen');
-
     this.imagenSeleccionadaCinco = "";
 
   }
 
   obtenerPropiedad(){
     this.identificador = localStorage.getItem('idPropiedad');
-    // this.identificador = this.activatedRoute.snapshot.params._id;
 
     this.inmuebleService.obtenerPropiedad(this.identificador).subscribe(resultado => {
       this.propiedades = resultado.propiedad;
@@ -202,7 +202,10 @@ export class ModificarPropComponent implements OnInit{
       this.mapa = resultado.propiedad.mapa;
       this.tipoMoneda = resultado.propiedad.tipoMoneda;
       this.precio = resultado.propiedad.precio;
-      this.idPropietario = resultado.propiedad.idPropietario.nombre;
+      // this.clienteService.obtenerClientes().subscribe(resultado => {
+      //   this.propietarios = resultado.cliente;
+      // });
+      // this.idPropietario = resultado.propiedad.idPropietario.nombre;
       this.agua = resultado.propiedad.agua;
       this.luz = resultado.propiedad.luz;
       this.gas = resultado.propiedad.gas;
@@ -214,6 +217,12 @@ export class ModificarPropComponent implements OnInit{
       this.imagenSeleccionadaTres = resultado.propiedad.imagenSeleccionadaTres;
       this.imagenSeleccionadaCuatro = resultado.propiedad.imagenSeleccionadaCuatro;
       this.imagenSeleccionadaCinco = resultado.propiedad.imagenSeleccionadaCinco;
+    });
+  }
+
+  filtrarPorPropietario(){
+    this.clienteService.obtenerClientes().subscribe(resultado => {
+      this.propietarios = resultado.clientes;
     });
   }
 
@@ -251,7 +260,8 @@ export class ModificarPropComponent implements OnInit{
       imagen2: this.imagenDos,
       imagen3: this.imagenTres,
       imagen4: this.imagenCuatro,
-      imagen5: this.imagenCinco
+      imagen5: this.imagenCinco,
+      mostrar: false
     }
 
     var datos = JSON.stringify(formulario);
@@ -295,30 +305,6 @@ export class ModificarPropComponent implements OnInit{
     localStorage.removeItem('idPropiedad');
 
     this.router.navigate(['/dashboard/listar-prop']);
-  }
-
-  filtrarPorPropietario(){
-    this.clienteService.obtenerClientes().subscribe(resultado => {
-      this.propietarios = resultado.cliente;
-      this.idPropietario = this.propietarios._id;
-    });
-  }
-
-  checkOnoCheck(){
-    const input = document.getElementById("inputBPoC") as HTMLInputElement;
-    if(input.checked){
-      console.log('esta tildado: ' + input.checked);
-      const inputMza = document.getElementById("manzana") as HTMLInputElement;
-      inputMza.disabled = false;
-      const inputLote = document.getElementById("lote") as HTMLInputElement;
-      inputLote.disabled = false;
-    }else{
-      console.log('esta tildado: ' + input.checked);
-      const inputMza = document.getElementById("manzana") as HTMLInputElement;
-      inputMza.disabled = true;
-      const inputLote = document.getElementById("lote") as HTMLInputElement;
-      inputLote.disabled = true;
-    }
   }
 
   ngOnInit() {

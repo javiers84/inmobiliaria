@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" id="contenedorTabla">
     <div class="col-12">
 
         <!-- //////// TITULO /////////// -->
@@ -10,7 +10,8 @@
         <div class="listado">
             <table class="tabla">
                 <thead>
-                    <tr>
+                    <tr id="tituloTabla">
+                        <td class="itemTitulo">Mostrar</td>
                         <td class="itemTitulo">Foto</td>
                         <td class="itemTitulo">Domicilio</td>
                         <td class="itemTitulo">Propietario</td>
@@ -22,7 +23,10 @@
 
                 <tbody id="datosTabla">
                     <tr *ngFor="let propiedad of propiedades">
-                        <td class="itemImg"><img src="http://localhost:3000/{{ propiedad.imagen1 }}" id="imagen"
+                        <td class="item">
+                            <input [(ngModel)]="propiedad.mostrar" value="propiedad.mostrar" type="checkbox" id="inputMostrar" (change)="mostrarUocultar(propiedad._id)">
+                        </td>
+                        <td class="itemImg"><img src="https://www.marinoinmobiliaria.com.ar/{{ propiedad.imagen1 }}" id="imagen"
                                 class="card-img-top"></td>
                         <td class="item">{{ propiedad.domicilio }}</td>
                         <td class="item">{{ propiedad.idPropietario.nombre }}</td>
